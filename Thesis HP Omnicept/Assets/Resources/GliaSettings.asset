@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fab54ab55a69f2347bdfcc42ef5034dc, type: 3}
+  m_Name: GliaSettings
+  m_EditorClassIdentifier: 
+  LicenseType: 2
+  ClientIDBytes: 2a9f1f04697e19487648b7665388883c82a7b25187bda320c7e941eb57ee25d4ae9e3d193c23deb0684761807de57020
+  AccessKeyBytes: 4c5a747b85b7bb4784b9d4f7d0b76afb1372c3118c5a688c4561d7f87c4326dcfab67635cac80938ddfa5960e730d191577209a6c5dba6d4c9c4663193388b60ffa86bf59c80645dd6ea810a304d44ac
+  UnitySubscriptions:
+  - m_label: Heart Rate
+    m_enabled: 1
+    m_messageType: 3
+    m_sender: 
+    m_id: 
+    m_subid: 
+    m_location: 
+    m_versionSemantic: 
+  - m_label: Heart Rate Variability
+    m_enabled: 1
+    m_messageType: 36
+    m_sender: 
+    m_id: 
+    m_subid: 
+    m_location: 
+    m_versionSemantic: 
+  - m_label: PPG
+    m_enabled: 1
+    m_messageType: 18
+    m_sender: 
+    m_id: 
+    m_subid: 
+    m_location: 
+    m_versionSemantic: 
+  - m_label: Eye Tracking
+    m_enabled: 1
+    m_messageType: 9
+    m_sender: 
+    m_id: 
+    m_subid: 
+    m_location: 
+    m_versionSemantic: 
+  - m_label: VSync
+    m_enabled: 1
+    m_messageType: 28
+    m_sender: 
+    m_id: 
+    m_subid: 
+    m_location: 
+    m_versionSemantic: 
+  - m_label: Cognitive Load
+    m_enabled: 1
+    m_messageType: 21
+    m_sender: 
+    m_id: 
+    m_subid: 
+    m_location: 
+    m_versionSemantic: 
+  - m_label: Camera Image
+    m_enabled: 1
+    m_messageType: 37
+    m_sender: 
+    m_id: 
+    m_subid: 
+    m_location: 
+    m_versionSemantic: 
+  - m_label: Data Vault Result
+    m_enabled: 1
+    m_messageType: 32
+    m_sender: 
+    m_id: 
+    m_subid: 
+    m_location: 
+    m_versionSemantic: 
+  - m_label: IMU
+    m_enabled: 1
+    m_messageType: 39
+    m_sender: 
+    m_id: 
+    m_subid: 
+    m_location: 
+    m_versionSemantic: 
+  - m_label: Subscription Result List
+    m_enabled: 1
+    m_messageType: 42
+    m_sender: 
+    m_id: 
+    m_subid: 
+    m_location: 
+    m_versionSemantic: 
