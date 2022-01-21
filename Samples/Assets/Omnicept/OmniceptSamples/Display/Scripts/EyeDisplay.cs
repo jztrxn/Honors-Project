@@ -15,6 +15,8 @@ namespace HP.Glia.Examples.Display
         private Vector2 rightGazeTarget;
         private float rightPupilSizeTarget = 0.5f;
 
+        
+
         private Material rightEyeMaterial;
         private Material leftEyeMaterial;
 
@@ -66,11 +68,22 @@ namespace HP.Glia.Examples.Display
         private void OnEyeTracking(EyeTracking eyeTracking)
         {
             if(eyeTracking != null){
+                //nongazeLeft = new Vector2(eyeTracking.LeftEye.PupilPosition.X, eyeTracking.LeftEye.PupilPosition.Y);
                 rightGazeTarget = new Vector2(eyeTracking.CombinedGaze.X, -eyeTracking.CombinedGaze.Y) ;
                 leftGazeTarget = new Vector2(eyeTracking.CombinedGaze.X, -eyeTracking.CombinedGaze.Y) ;
                 rightPupilSizeTarget = eyeTracking.RightEye.PupilDilation/10f;
                 leftPupilSizeTarget = eyeTracking.LeftEye.PupilDilation / 10f;
             }
+        }
+
+        private Vector2 nongazeLeft;
+        private Vector2 rightEyeTarget;
+        private Vector2 leftEyeTarget;
+        public void EyeCoords(EyeTracking eyeTracking)
+        {
+            rightEyeTarget = new Vector2(eyeTracking.RightEye.PupilPosition.X, -eyeTracking.RightEye.PupilPosition.Y);
+            leftEyeTarget = new Vector2(eyeTracking.LeftEye.PupilPosition.X, -eyeTracking.LeftEye.PupilPosition.Y);
+
         }
     }
 }

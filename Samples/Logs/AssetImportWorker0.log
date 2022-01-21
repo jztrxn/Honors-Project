@@ -709,3 +709,583 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 260.439387 seconds.
+  path: Assets/Omnicept
+  artifactKey: Guid(96696dd4dcfa3ea499ec85ebbff5ee38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Omnicept using Guid(96696dd4dcfa3ea499ec85ebbff5ee38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '912ad88f82cb2196aed57fa3de00480c') in 0.007060 seconds 
+  Import took 0.011909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.649011 seconds.
+  path: Assets/Omnicept/OmniceptSamples
+  artifactKey: Guid(5a00ef1b40e4877489dd1dbadc758048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Omnicept/OmniceptSamples using Guid(5a00ef1b40e4877489dd1dbadc758048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef612505af6581e7d201e8c2ab73b4b7') in 0.002884 seconds 
+  Import took 0.006736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.936225 seconds.
+  path: Assets/Omnicept/OmniceptSamples/Display
+  artifactKey: Guid(090dec3ed739cc04187f246d31138d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Omnicept/OmniceptSamples/Display using Guid(090dec3ed739cc04187f246d31138d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe9a7286dc2f472ed48ea67e8324d062') in 0.002534 seconds 
+  Import took 0.006344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.793884 seconds.
+  path: Assets/Omnicept/OmniceptSamples/Display.unity
+  artifactKey: Guid(d42d968635497934faf2ba5f2501c7f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Omnicept/OmniceptSamples/Display.unity using Guid(d42d968635497934faf2ba5f2501c7f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59112e6a43a1dd4ed211242ec31c4f03') in 0.025542 seconds 
+  Import took 0.028903 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.019518 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.20 ms.
+Added DLL directory C:\Users\Joseph\Desktop\Unity Projects\Honors-Project\Samples\Library\PackageCache\com.microsoft.mixedreality.input@0.9.2006\Plugins\Windows\x64 to the user search path.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Microsoft.MixedReality.Input.Init:.cctor () (at Library/PackageCache/com.microsoft.mixedreality.input@0.9.2006/Editor/Microsoft.MixedReality.Input.Init.cs:88)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.input@0.9.2006/Editor/Microsoft.MixedReality.Input.Init.cs Line: 88)
+
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Mono: successfully reloaded assembly
+- Completed reload, in  1.135 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1135ms)
+		BeginReloadAssembly (125ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (948ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (229ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (437ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (321ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.16 ms.
+Unloading 2613 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.1 MB.
+System memory in use after: 112.2 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3192.
+Total: 3.102400 ms (FindLiveObjects: 0.244900 ms CreateObjectMapping: 0.103600 ms MarkObjects: 2.685300 ms  DeleteObjects: 0.067700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.027848 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.16 ms.
+Added DLL directory C:\Users\Joseph\Desktop\Unity Projects\Honors-Project\Samples\Library\PackageCache\com.microsoft.mixedreality.input@0.9.2006\Plugins\Windows\x64 to the user search path.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Microsoft.MixedReality.Input.Init:.cctor () (at Library/PackageCache/com.microsoft.mixedreality.input@0.9.2006/Editor/Microsoft.MixedReality.Input.Init.cs:88)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.input@0.9.2006/Editor/Microsoft.MixedReality.Input.Init.cs Line: 88)
+
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Mono: successfully reloaded assembly
+- Completed reload, in  1.202 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1203ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (1009ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (253ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (492ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (379ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.13 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.18 ms.
+Unloading 2613 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.1 MB.
+System memory in use after: 112.2 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3195.
+Total: 2.848400 ms (FindLiveObjects: 0.230000 ms CreateObjectMapping: 0.099000 ms MarkObjects: 2.452900 ms  DeleteObjects: 0.065600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.025041 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.19 ms.
+Added DLL directory C:\Users\Joseph\Desktop\Unity Projects\Honors-Project\Samples\Library\PackageCache\com.microsoft.mixedreality.input@0.9.2006\Plugins\Windows\x64 to the user search path.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Microsoft.MixedReality.Input.Init:.cctor () (at Library/PackageCache/com.microsoft.mixedreality.input@0.9.2006/Editor/Microsoft.MixedReality.Input.Init.cs:88)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.input@0.9.2006/Editor/Microsoft.MixedReality.Input.Init.cs Line: 88)
+
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Mono: successfully reloaded assembly
+- Completed reload, in  1.172 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1172ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (979ms)
+			LoadAssemblies (112ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (239ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (434ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (314ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.96 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.20 ms.
+Unloading 2613 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.1 MB.
+System memory in use after: 112.3 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3198.
+Total: 2.850300 ms (FindLiveObjects: 0.211800 ms CreateObjectMapping: 0.102600 ms MarkObjects: 2.461600 ms  DeleteObjects: 0.073300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018633 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.15 ms.
+Added DLL directory C:\Users\Joseph\Desktop\Unity Projects\Honors-Project\Samples\Library\PackageCache\com.microsoft.mixedreality.input@0.9.2006\Plugins\Windows\x64 to the user search path.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Microsoft.MixedReality.Input.Init:.cctor () (at Library/PackageCache/com.microsoft.mixedreality.input@0.9.2006/Editor/Microsoft.MixedReality.Input.Init.cs:88)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.input@0.9.2006/Editor/Microsoft.MixedReality.Input.Init.cs Line: 88)
+
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Mono: successfully reloaded assembly
+- Completed reload, in  1.129 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1130ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (951ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (254ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (422ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (310ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.73 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.14 ms.
+Unloading 2613 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.1 MB.
+System memory in use after: 112.3 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3201.
+Total: 3.260400 ms (FindLiveObjects: 0.220400 ms CreateObjectMapping: 0.103100 ms MarkObjects: 2.852600 ms  DeleteObjects: 0.083500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 313.271475 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.006256 seconds 
+  Import took 0.009871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.995351 seconds.
+  path: Assets/EyesScript.cs
+  artifactKey: Guid(95d84646027ee0e4ebcbe705a8b2b104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EyesScript.cs using Guid(95d84646027ee0e4ebcbe705a8b2b104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09c9ce6740db0a6d07eaffd1e97af507') in 0.006895 seconds 
+  Import took 0.011513 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018812 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.15 ms.
+Added DLL directory C:\Users\Joseph\Desktop\Unity Projects\Honors-Project\Samples\Library\PackageCache\com.microsoft.mixedreality.input@0.9.2006\Plugins\Windows\x64 to the user search path.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Microsoft.MixedReality.Input.Init:.cctor () (at Library/PackageCache/com.microsoft.mixedreality.input@0.9.2006/Editor/Microsoft.MixedReality.Input.Init.cs:88)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.input@0.9.2006/Editor/Microsoft.MixedReality.Input.Init.cs Line: 88)
+
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Mono: successfully reloaded assembly
+- Completed reload, in  1.124 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1124ms)
+		BeginReloadAssembly (148ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (911ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (235ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (404ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (297ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.73 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.15 ms.
+Unloading 2614 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.1 MB.
+System memory in use after: 112.3 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3205.
+Total: 2.924600 ms (FindLiveObjects: 0.249900 ms CreateObjectMapping: 0.114100 ms MarkObjects: 2.491800 ms  DeleteObjects: 0.068200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018183 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.16 ms.
+Added DLL directory C:\Users\Joseph\Desktop\Unity Projects\Honors-Project\Samples\Library\PackageCache\com.microsoft.mixedreality.input@0.9.2006\Plugins\Windows\x64 to the user search path.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Microsoft.MixedReality.Input.Init:.cctor () (at Library/PackageCache/com.microsoft.mixedreality.input@0.9.2006/Editor/Microsoft.MixedReality.Input.Init.cs:88)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.input@0.9.2006/Editor/Microsoft.MixedReality.Input.Init.cs Line: 88)
+
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Mono: successfully reloaded assembly
+- Completed reload, in  1.129 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1130ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (924ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (257ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (389ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (287ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.14 ms.
+Unloading 2614 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.1 MB.
+System memory in use after: 112.3 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3208.
+Total: 2.674700 ms (FindLiveObjects: 0.204000 ms CreateObjectMapping: 0.091700 ms MarkObjects: 2.307300 ms  DeleteObjects: 0.071000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.020963 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.15 ms.
+Added DLL directory C:\Users\Joseph\Desktop\Unity Projects\Honors-Project\Samples\Library\PackageCache\com.microsoft.mixedreality.input@0.9.2006\Plugins\Windows\x64 to the user search path.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Microsoft.MixedReality.Input.Init:.cctor () (at Library/PackageCache/com.microsoft.mixedreality.input@0.9.2006/Editor/Microsoft.MixedReality.Input.Init.cs:88)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.microsoft.mixedreality.input@0.9.2006/Editor/Microsoft.MixedReality.Input.Init.cs Line: 88)
+
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/Assets/Omnicept/Glia/Plugins/advapi32
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Mono/lib/libAssets/Omnicept/Glia/Plugins/advapi32.dll
+Mono: successfully reloaded assembly
+- Completed reload, in  1.336 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1337ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (1155ms)
+			LoadAssemblies (148ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (270ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (494ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (109ms)
+				ProcessInitializeOnLoadAttributes (359ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.82 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.17 ms.
+Unloading 2614 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.1 MB.
+System memory in use after: 112.3 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3211.
+Total: 3.218500 ms (FindLiveObjects: 0.234200 ms CreateObjectMapping: 0.119400 ms MarkObjects: 2.772900 ms  DeleteObjects: 0.090800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
