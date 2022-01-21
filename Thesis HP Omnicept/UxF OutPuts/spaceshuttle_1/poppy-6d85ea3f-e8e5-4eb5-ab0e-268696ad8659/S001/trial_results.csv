@@ -1,0 +1,11 @@
+experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,thrust,altitude,shuttle_movement_location_0
+spaceshuttle_1,poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659,1,1,1,1,227.4021,232.4081,1.124565,7.644111,spaceshuttle_1/poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659/S001/trackers/shuttle_movement_T001.csv
+spaceshuttle_1,poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659,1,2,1,2,234.4041,239.42,0.581845,4.79564,spaceshuttle_1/poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659/S001/trackers/shuttle_movement_T002.csv
+spaceshuttle_1,poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659,1,3,1,3,241.44,246.4435,1.823243,11.54696,spaceshuttle_1/poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659/S001/trackers/shuttle_movement_T003.csv
+spaceshuttle_1,poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659,1,4,1,4,248.46,253.4712,0.820384,6.343077,spaceshuttle_1/poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659/S001/trackers/shuttle_movement_T004.csv
+spaceshuttle_1,poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659,1,5,1,5,255.4693,260.4683,1.604609,10.02149,spaceshuttle_1/poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659/S001/trackers/shuttle_movement_T005.csv
+spaceshuttle_1,poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659,1,6,1,6,262.4623,267.4655,0.699283,5.498687,spaceshuttle_1/poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659/S001/trackers/shuttle_movement_T006.csv
+spaceshuttle_1,poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659,1,7,1,7,269.4667,274.4712,1.289455,8.453143,spaceshuttle_1/poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659/S001/trackers/shuttle_movement_T007.csv
+spaceshuttle_1,poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659,1,8,1,8,276.4624,281.4674,1.525522,9.635189,spaceshuttle_1/poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659/S001/trackers/shuttle_movement_T008.csv
+spaceshuttle_1,poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659,1,9,1,9,283.4682,288.4677,0.914588,6.572442,spaceshuttle_1/poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659/S001/trackers/shuttle_movement_T009.csv
+spaceshuttle_1,poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659,1,10,1,10,290.4716,295.4641,1.76338,10.80383,spaceshuttle_1/poppy-6d85ea3f-e8e5-4eb5-ab0e-268696ad8659/S001/trackers/shuttle_movement_T010.csv

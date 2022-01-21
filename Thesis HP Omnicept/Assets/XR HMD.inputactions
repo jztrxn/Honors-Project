@@ -1,0 +1,150 @@
+{
+    "name": "XR HMD",
+    "maps": [
+        {
+            "name": "XRI HMD",
+            "id": "45d50acb-f748-443b-8ecb-f603d2dae968",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "86d2a5de-9027-4acf-9995-d81985be77bc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "da96a463-8fc3-4d45-ad00-881c98c0987b",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "XRI Lefthand",
+            "id": "0add1834-d58b-4578-8000-1f3bc4f3ad10",
+            "actions": [
+                {
+                    "name": "Position",
+                    "type": "Button",
+                    "id": "23b10fa6-c065-443d-88b2-3bad8c1ef8ec",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Select",
+                    "type": "Button",
+                    "id": "11543812-798e-40e2-9893-56b21720c6b0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Activate",
+                    "type": "Button",
+                    "id": "88c4d0e3-1bc1-44bd-a587-d1af0dff36dd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "80fccc3a-b584-44f1-9eb0-dccb4a7adaf8",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "42271603-90c2-4dad-9ce1-206a8095b284",
+                    "path": "<XRController>{LeftHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ceb62976-281a-438a-a531-056c2e8ae8db",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "XRI RightHand",
+            "id": "5997f93d-9c8d-472e-ac7d-3afd1ba31e78",
+            "actions": [
+                {
+                    "name": "Select",
+                    "type": "Button",
+                    "id": "d192f0e6-bd28-4017-b44e-d60b30a72736",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Activate",
+                    "type": "Button",
+                    "id": "195b4446-798b-4b6c-9c68-81010ead11d6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "66be786a-7bea-4e7e-a926-1f19efb67879",
+                    "path": "<XRController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "67dce3d1-8045-4471-997b-214ace76fbae",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "XR Controllers",
+            "bindingGroup": "XR Controllers",
+            "devices": []
+        }
+    ]
+}
