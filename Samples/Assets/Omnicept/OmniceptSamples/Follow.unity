@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 9059536729098962651}
-  m_IndirectSpecularColor: {r: 0.1833095, g: 0.22893825, b: 0.30625388, a: 1}
+  m_IndirectSpecularColor: {r: 0.46529084, g: 0.51577955, b: 0.5893469, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -526,6 +526,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FollowGame
       objectReference: {fileID: 0}
+    - target: {fileID: 6779290042987322128, guid: 84521d1591936124cbe2ea56f2b62316,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6883760329443506941, guid: 84521d1591936124cbe2ea56f2b62316,
         type: 3}
       propertyPath: m_textInfo.lineCount
@@ -850,7 +855,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-10056
+  m_Name: pb_Mesh-17440
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1302,6 +1307,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4628157132510170745, guid: 8a979bdcdeb450145ad0264528b7edff,
+        type: 3}
+      propertyPath: m_CameraYOffset
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628157132510170745, guid: 8a979bdcdeb450145ad0264528b7edff,
+        type: 3}
+      propertyPath: m_RequestedTrackingOriginMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4628157133049139427, guid: 8a979bdcdeb450145ad0264528b7edff,
+        type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a979bdcdeb450145ad0264528b7edff, type: 3}
 --- !u!1001 &2961669025273679672
@@ -1384,6 +1404,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059536729334809964, guid: aea51ed589e4e1f46a87cf03239255a3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9059536729334809965, guid: aea51ed589e4e1f46a87cf03239255a3,
         type: 3}

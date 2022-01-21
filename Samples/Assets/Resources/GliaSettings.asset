@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ac2f94323cc114fb425c254e1a8c96, type: 3}
   m_Name: GliaSettings
   m_EditorClassIdentifier: 
-  LicenseType: 1
-  ClientIDBytes: 
-  AccessKeyBytes: 
+  LicenseType: 2
+  ClientIDBytes: fde1754ce83427b92920b216364dc80906e1a7a3d7e1602d417bd9ed678270f25b711452c25b2570c8c99d9880aee95e
+  AccessKeyBytes: ff6c5f6e30c347324383d1525e8f4a76d2750de2df47747b42230888765e9a4e80cf74a260f57f4bc9475530febe62a5fe0800c5ea1f420dab719c611ab1e3d8b4ec541dc2d23075e0568c85dc53e149
