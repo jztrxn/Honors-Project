@@ -2,9 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UXF;
+using HP.Omnicept.Unity;
+using HP.Omnicept.Messaging.Messages;
+
 
 public class ExperimentGenerator : MonoBehaviour
 {
+    
+
+
+    private GliaBehaviour _gliaBehaviour = null;
+    private GliaBehaviour gliaBehaviour
+    {
+        get
+        {
+            if (_gliaBehaviour == null)
+            {
+                _gliaBehaviour = FindObjectOfType<GliaBehaviour>();
+            }
+
+            return _gliaBehaviour;
+        }
+    }
+
+
     public void Generate(Session session)
     {
         int numTrials = session.settings.GetInt("trials_per_block", 10);
@@ -19,6 +40,59 @@ public class ExperimentGenerator : MonoBehaviour
         }
     }
 
+    private Vector2 rightGazeTarget;
+    private Vector2 leftGazeTarget;
+    private Vector2 rightPupilTarget;
+    private Vector2 leftPupilTarget;
+    public bool showEyeTrackingMessages = true;
+    public void EyeTrackingHandler(EyeTracking eyeTracking)
+    {
+        if (showEyeTrackingMessages && eyeTracking != null)
+        {
+            Debug.Log(eyeTracking);
+        }
+    }
+
+    public void getEyeTracking()
+    {
+        var eyeTracking = gliaBehaviour.GetLastEyeTracking();
+        Debug.Log(eyeTracking);
+
+
+        rightGazeTarget = new Vector2(eyeTracking.CombinedGaze.X, -eyeTracking.CombinedGaze.Y);
+        leftGazeTarget = new Vector2(eyeTracking.CombinedGaze.X, -eyeTracking.CombinedGaze.Y);
+
+        float rPupilX = eyeTracking.RightEye.PupilPosition.X;
+        float rPupilY = eyeTracking.RightEye.PupilPosition.Y;
+        float lPupilX = eyeTracking.LeftEye.PupilPosition.X;
+        float lPupilY = eyeTracking.LeftEye.PupilPosition.Y;
+        Debug.Log(rPupilX);
+        Debug.Log(rPupilY);
+        rightPupilTarget = new Vector2(rPupilX, rPupilY);
+        leftPupilTarget = new Vector2(lPupilX, lPupilY);
+        Debug.LogFormat("RightGazeTarget is: {0}", rightGazeTarget);
+        Debug.LogFormat("LeftGazeTarget is: {0}", leftGazeTarget);
+        Debug.LogFormat("rightPupil is: {0}", rightPupilTarget);
+        Debug.LogFormat("leftPupil is: {0}", leftPupilTarget);
+
+        Session.instance.CurrentTrial.result["right eye pupil"] = (rPupilX, rPupilY);
+        Session.instance.CurrentTrial.result["left eye pupil"] = (lPupilX, lPupilY);
+        //rightPupilSizeTarget = eyeTracking.RightEye.PupilDilation / 10f;
+        //leftPupilSizeTarget = eyeTracking.LeftEye.PupilDilation / 10f;
+    }
+    /*private void OnEyeTracking(EyeTracking eyeTracking)
+    {
+        if(eyeTracking != null)
+        {
+            rightGazeTarget = new Vector2(eyeTracking.CombinedGaze.X, -eyeTracking.CombinedGaze.Y);
+            leftGazeTarget = new Vector2(eyeTracking.CombinedGaze.X, -eyeTracking.CombinedGaze.Y);
+            //Debug.LogFormat("RightGazeTarget is: {0}", rightGazeTarget);
+            //Debug.LogFormat("LeftGazeTarget is: {0}", leftGazeTarget);
+            //rightPupilSizeTarget = eyeTracking.RightEye.PupilDilation / 10f;
+            //leftPupilSizeTarget = eyeTracking.LeftEye.PupilDilation / 10f;
+        }
+    }*/
+
     public GameObject centerLine;
     public GameObject rightLine;
     public GameObject fusionLock;
@@ -26,9 +100,9 @@ public class ExperimentGenerator : MonoBehaviour
 
     public void SetObjects(float distance)
     {
-        centerLine.transform.position = new Vector3(0f, 0.5f, distance);
-        rightLine.transform.position = new Vector3(1.0f, 0f, distance);
-        fusionLock.transform.position = new Vector3(0f, 0f, distance);
+        centerLine.transform.localPosition = new Vector3(0f, 0.5f, distance);
+        rightLine.transform.localPosition = new Vector3(1.0f, 0f, distance);
+        fusionLock.transform.localPosition = new Vector3(0f, 0f, distance);
     }
 
     public void PresentStimulus(Trial trial)
@@ -46,6 +120,8 @@ public class ExperimentGenerator : MonoBehaviour
 
     private void Update()
     {
+        //Debug.LogFormat("RightGazeTarget is: {0}", rightGazeTarget);
+        //Debug.LogFormat("LeftGazeTarget is: {0}", leftGazeTarget);
         if (Input.GetKey(KeyCode.A))
         {
             rightLine.transform.Translate(-stepSize, 0f, 0f);
@@ -60,6 +136,7 @@ public class ExperimentGenerator : MonoBehaviour
         {
 
             EndAndPrepare();
+            getEyeTracking();
         }
     }
     public void EndAndPrepare()
@@ -76,7 +153,7 @@ public class ExperimentGenerator : MonoBehaviour
         if (Session.instance.CurrentTrial == Session.instance.LastTrial)
         {
             Session.instance.End();
-            //Application.Quit();
+            
         }
         else
         {
@@ -88,5 +165,10 @@ public class ExperimentGenerator : MonoBehaviour
     void BeginNext()
     {
         Session.instance.BeginNextTrial();
+    }
+
+    void EndApp()
+    {
+        Application.Quit();
     }
 }

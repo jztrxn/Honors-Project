@@ -1,0 +1,9 @@
+experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,discrepancy
+csv_spaceshuttle,jo12,1,1,1,1,8.992937,16.62635,1
+csv_spaceshuttle,jo12,1,2,1,2,16.62635,21.97431,0.140001
+csv_spaceshuttle,jo12,1,3,1,3,21.97431,25.29938,-0.264999
+csv_spaceshuttle,jo12,1,4,1,4,25.29938,28.71176,-0.489999
+csv_spaceshuttle,jo12,1,5,1,5,28.71176,29.43307,0.925
+csv_spaceshuttle,jo12,1,6,1,6,29.43307,30.19967,1.245
+csv_spaceshuttle,jo12,1,7,1,7,30.19967,31.04608,0.78
+csv_spaceshuttle,jo12,1,8,1,8,31.04608,64.39347,
