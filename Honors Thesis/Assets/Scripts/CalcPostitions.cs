@@ -24,13 +24,13 @@ public class CalcPostitions : MonoBehaviour
         {
             float distFromUser = leftObj.transform.position.z;
             float leftPos = leftObj.transform.position.x;
+            float centerPos = centerObj.transform.position.x;
             float rightPos = rightObj.transform.position.x;
-            float separation = leftPos - rightPos;
+            float separation = centerPos - rightPos;
             float distFromCenter = Mathf.Abs((leftPos + rightPos)/2);
 
-            valuesObj.text = "Distance: " + distFromUser.ToString() + 
-                "\nLeft: " + leftPos.ToString() + "\nRight: " + rightPos.ToString() + 
-                "\nSep: " + separation.ToString() + "\ndistCenter: " + distFromCenter.ToString();
+            valuesObj.text = "Distance: " + distFromUser.ToString()+  "\nRight: " + rightPos.ToString() + 
+                "\nSep: " + separation.ToString();
         }
     }
 }
