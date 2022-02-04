@@ -24,19 +24,34 @@ public class ExperimentGenerator : MonoBehaviour
             return _gliaBehaviour;
         }
     }
-
-
+    
     public void Generate(Session session)
     {
-        int numTrials = session.settings.GetInt("trials_per_block", 10);
+        int numTrials = session.settings.GetInt("trials_per_block", 5);
 
         Block block1 = session.CreateBlock(numTrials);
-        //Block block2 = session.CreateBlock(numTrials);
+        Block block2 = session.CreateBlock(numTrials);
 
 
         foreach (Trial trial in session.Trials)
         {
-            //Do something
+            if (session.settings.GetBool("random_nonius", false))
+            {
+                trial.settings.SetValue("nonius_start_pos", Random.Range(-1f, 1f));
+            }
+            else
+            {
+                trial.settings.SetValue("nonius_start_pos", 1f);
+            }
+
+            if (session.settings.GetBool("random_distance", false))
+            {
+                trial.settings.SetValue("scene_distance", Random.Range(2, 10));
+            }
+            else
+            {
+                trial.settings.SetValue("scene_distance", (int)trial.number + 1);
+            }
         }
     }
 
@@ -80,28 +95,16 @@ public class ExperimentGenerator : MonoBehaviour
         //rightPupilSizeTarget = eyeTracking.RightEye.PupilDilation / 10f;
         //leftPupilSizeTarget = eyeTracking.LeftEye.PupilDilation / 10f;
     }
-    /*private void OnEyeTracking(EyeTracking eyeTracking)
-    {
-        if(eyeTracking != null)
-        {
-            rightGazeTarget = new Vector2(eyeTracking.CombinedGaze.X, -eyeTracking.CombinedGaze.Y);
-            leftGazeTarget = new Vector2(eyeTracking.CombinedGaze.X, -eyeTracking.CombinedGaze.Y);
-            //Debug.LogFormat("RightGazeTarget is: {0}", rightGazeTarget);
-            //Debug.LogFormat("LeftGazeTarget is: {0}", leftGazeTarget);
-            //rightPupilSizeTarget = eyeTracking.RightEye.PupilDilation / 10f;
-            //leftPupilSizeTarget = eyeTracking.LeftEye.PupilDilation / 10f;
-        }
-    }*/
 
     public GameObject centerLine;
-    public GameObject rightLine;
+    public GameObject noniusLine;
     public GameObject fusionLock;
     public float stepSize;
 
-    public void SetObjects(float distance)
+    public void SetObjects(float distance, float noniusStart)
     {
         centerLine.transform.localPosition = new Vector3(0f, 0.5f, distance);
-        rightLine.transform.localPosition = new Vector3(1.0f, 0f, distance);
+        noniusLine.transform.localPosition = new Vector3(noniusStart, 0f, distance);
         fusionLock.transform.localPosition = new Vector3(0f, 0f, distance);
     }
 
@@ -109,10 +112,15 @@ public class ExperimentGenerator : MonoBehaviour
     {
         Debug.LogFormat("Running trial {0}", trial.number);
 
-        float distance = (float)trial.number + 1f;
+        int distance = trial.settings.GetInt("scene_distance");
+        float noniusStartPos = trial.settings.GetFloat("nonius_start_pos");
         Debug.LogFormat("The distance for this trial is: {0}", distance);
+        Debug.LogFormat("Nonius Start Pos is: {0}", noniusStartPos);
 
-        SetObjects(distance);
+        Session.instance.CurrentTrial.result["Scene Distance"] = distance;
+        Session.instance.CurrentTrial.result["Nonius Start"] = noniusStartPos;
+
+        SetObjects(distance, noniusStartPos);
         
 
         //Invoke("EndAndPrepare", 1f);
@@ -124,12 +132,12 @@ public class ExperimentGenerator : MonoBehaviour
         //Debug.LogFormat("LeftGazeTarget is: {0}", leftGazeTarget);
         if (Input.GetKey(KeyCode.A))
         {
-            rightLine.transform.Translate(-stepSize, 0f, 0f);
+            noniusLine.transform.Translate(-stepSize, 0f, 0f);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            rightLine.transform.Translate(+stepSize, 0f, 0f);
+            noniusLine.transform.Translate(+stepSize, 0f, 0f);
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -141,10 +149,10 @@ public class ExperimentGenerator : MonoBehaviour
     }
     public void EndAndPrepare()
     {
-        float discrepancy = rightLine.transform.position.x;
+        float discrepancy = noniusLine.transform.position.x;
         Debug.LogFormat("Discrepancy between two eyes was {0}", discrepancy);
 
-        Session.instance.CurrentTrial.result["discrepancy"] = System.Math.Round(discrepancy, 7);
+        Session.instance.CurrentTrial.result["Discrepancy"] = System.Math.Round(discrepancy, 7);
 
         Debug.Log("Ending Trial");
         Session.instance.CurrentTrial.End();
@@ -169,6 +177,8 @@ public class ExperimentGenerator : MonoBehaviour
 
     void EndApp()
     {
+        Debug.Log("this is ending and ran");
+        UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 }

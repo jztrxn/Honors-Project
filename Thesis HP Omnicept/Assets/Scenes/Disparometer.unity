@@ -1096,7 +1096,7 @@ GameObject:
   - component: {fileID: 1423680690}
   - component: {fileID: 1423680689}
   m_Layer: 7
-  m_Name: Right Line
+  m_Name: Nonius Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1320,7 +1320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showEyeTrackingMessages: 1
   centerLine: {fileID: 920069732}
-  rightLine: {fileID: 1423680688}
+  noniusLine: {fileID: 1423680688}
   fusionLock: {fileID: 1647182359504084115}
   stepSize: 0.005
 --- !u!4 &1603984283
@@ -1756,7 +1756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4834968701760316578, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4979987231477995344, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1801,7 +1801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6301449615104170796, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
       propertyPath: dataSaveLocation
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7587908648779123904, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
       propertyPath: m_AnchorMax.y

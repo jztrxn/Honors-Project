@@ -1,0 +1,8 @@
+experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,discrepancy,right eye pupil,left eye pupil
+disparometer_random,jo2.1,1,1,1,1,14.4373,24.5008,-0.048223,,
+disparometer_random,jo2.1,1,2,1,2,24.5008,25.64537,0.161777,(0.5367888_ 0.5376447),(0.5346039_ 0.5123672)
+disparometer_random,jo2.1,1,3,1,3,25.64537,27.03454,0.356777,(0.5037436_ 0.5545667),(0.4965748_ 0.5303558)
+disparometer_random,jo2.1,1,4,1,4,27.03454,28.80171,-0.583222,(0.5079784_ 0.5494136),(0.4946764_ 0.5265046)
+disparometer_random,jo2.1,1,5,1,5,28.80171,30.20193,-0.463223,(0.4669206_ 0.5502802),(0.4491519_ 0.5235328)
+disparometer_random,jo2.1,1,6,1,6,30.20193,32.02337,0.036777,(0.5136623_ 0.5459796),(0.4964072_ 0.5212514)
+disparometer_random,jo2.1,1,7,1,7,32.02337,37.41818,,(0.4759353_ 0.564451),(0.4597749_ 0.5381045)
