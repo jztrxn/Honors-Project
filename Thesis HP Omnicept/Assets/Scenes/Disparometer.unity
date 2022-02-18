@@ -1323,7 +1323,8 @@ MonoBehaviour:
   noniusLine: {fileID: 1423680688}
   fusionLock: {fileID: 1647182359504084115}
   stepSize: 0.001
-  speed: 0
+  acceleration: 0.005
+  waitSeconds: 2
 --- !u!4 &1603984283
 Transform:
   m_ObjectHideFlags: 0
@@ -2052,7 +2053,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647182359504084115}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09770a380a8580f4092903eefaace42b, type: 3}
   m_Name: 

@@ -2,7 +2,551 @@ timestamp,log_type,message,stacktrace
 0,Log,Connecting to service,UnityEngine.Debug:Log (object).  HP.Omnicept.Unity.GliaBehaviour:Start () (at Assets/Glia/Scripts/GliaBehaviour.cs:327).  
 0.02,Warning,A Canvas named "[UXF_UI]" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?,
 0.02,Warning,Visual Studio Editor Package version 2.0.14 is available we strongly encourage you to update from the Unity Package Manager for a better Visual Studio integration,UnityEngine.Debug:LogWarning (object).  Microsoft.Unity.VisualStudio.Editor.VisualStudioIntegration:HandleListRequestCompletion () (at Library/PackageCache/com.unity.ide.visualstudio@2.0.11/Editor/VisualStudioIntegration.cs:149).  Microsoft.Unity.VisualStudio.Editor.VisualStudioIntegration:OnUpdate () (at Library/PackageCache/com.unity.ide.visualstudio@2.0.11/Editor/VisualStudioIntegration.cs:160).  UnityEditor.EditorApplication:Internal_CallUpdateFunctions ().  
-5.90212,Log,[<b><color=#AD477C>UXF</color></b>] Beginning session.,UnityEngine.Debug:Log (object).  UXF.Utilities:UXFDebugLog (string) (at Assets/UXF/Scripts/Etc/Utilities.cs:13).  UXF.Session:Begin (stringstringintSystem.Collections.Generic.Dictionary`2<string object>UXF.Settings) (at Assets/UXF/Scripts/Session.cs:324).  UXF.UI.UIController/<>c__DisplayClass43_0:<TryBeginSessionFromUISequence>b__0 () (at Assets/UXF/Scripts/UI/UIController.cs:405).  UXF.UI.PopupController:OkPress () (at Assets/UXF/Scripts/UI/PopupController.cs:28).  UnityEngine.EventSystems.EventSystem:Update () (at Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:385).  
-5.90212,Log,Running trial 1,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:113).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:191).  UnityEngine.Events.UnityEvent`1<UXF.Session>:Invoke (UXF.Session).  UXF.Session:Begin (stringstringintSystem.Collections.Generic.Dictionary`2<string object>UXF.Settings) (at Assets/UXF/Scripts/Session.cs:327).  UXF.UI.UIController/<>c__DisplayClass43_0:<TryBeginSessionFromUISequence>b__0 () (at Assets/UXF/Scripts/UI/UIController.cs:405).  UXF.UI.PopupController:OkPress () (at Assets/UXF/Scripts/UI/PopupController.cs:28).  UnityEngine.EventSystems.EventSystem:Update () (at Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:385).  
-5.90212,Log,The distance for this trial is: 9,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:117).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:191).  UnityEngine.Events.UnityEvent`1<UXF.Session>:Invoke (UXF.Session).  UXF.Session:Begin (stringstringintSystem.Collections.Generic.Dictionary`2<string object>UXF.Settings) (at Assets/UXF/Scripts/Session.cs:327).  UXF.UI.UIController/<>c__DisplayClass43_0:<TryBeginSessionFromUISequence>b__0 () (at Assets/UXF/Scripts/UI/UIController.cs:405).  UXF.UI.PopupController:OkPress () (at Assets/UXF/Scripts/UI/PopupController.cs:28).  UnityEngine.EventSystems.EventSystem:Update () (at Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:385).  
-5.90212,Log,Nonius Start Pos is: 0.1315144,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:118).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:191).  UnityEngine.Events.UnityEvent`1<UXF.Session>:Invoke (UXF.Session).  UXF.Session:Begin (stringstringintSystem.Collections.Generic.Dictionary`2<string object>UXF.Settings) (at Assets/UXF/Scripts/Session.cs:327).  UXF.UI.UIController/<>c__DisplayClass43_0:<TryBeginSessionFromUISequence>b__0 () (at Assets/UXF/Scripts/UI/UIController.cs:405).  UXF.UI.PopupController:OkPress () (at Assets/UXF/Scripts/UI/PopupController.cs:28).  UnityEngine.EventSystems.EventSystem:Update () (at Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:385).  
+5.710661,Log,[<b><color=#AD477C>UXF</color></b>] Beginning session.,UnityEngine.Debug:Log (object).  UXF.Utilities:UXFDebugLog (string) (at Assets/UXF/Scripts/Etc/Utilities.cs:13).  UXF.Session:Begin (stringstringintSystem.Collections.Generic.Dictionary`2<string object>UXF.Settings) (at Assets/UXF/Scripts/Session.cs:324).  UXF.UI.UIController/<>c__DisplayClass43_0:<TryBeginSessionFromUISequence>b__0 () (at Assets/UXF/Scripts/UI/UIController.cs:405).  UXF.UI.PopupController:OkPress () (at Assets/UXF/Scripts/UI/PopupController.cs:28).  UnityEngine.EventSystems.EventSystem:Update () (at Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:385).  
+5.710661,Log,Running trial 1,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:113).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:184).  UnityEngine.Events.UnityEvent`1<UXF.Session>:Invoke (UXF.Session).  UXF.Session:Begin (stringstringintSystem.Collections.Generic.Dictionary`2<string object>UXF.Settings) (at Assets/UXF/Scripts/Session.cs:327).  UXF.UI.UIController/<>c__DisplayClass43_0:<TryBeginSessionFromUISequence>b__0 () (at Assets/UXF/Scripts/UI/UIController.cs:405).  UXF.UI.PopupController:OkPress () (at Assets/UXF/Scripts/UI/PopupController.cs:28).  UnityEngine.EventSystems.EventSystem:Update () (at Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:385).  
+5.710661,Log,The distance for this trial is: 9,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:117).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:184).  UnityEngine.Events.UnityEvent`1<UXF.Session>:Invoke (UXF.Session).  UXF.Session:Begin (stringstringintSystem.Collections.Generic.Dictionary`2<string object>UXF.Settings) (at Assets/UXF/Scripts/Session.cs:327).  UXF.UI.UIController/<>c__DisplayClass43_0:<TryBeginSessionFromUISequence>b__0 () (at Assets/UXF/Scripts/UI/UIController.cs:405).  UXF.UI.PopupController:OkPress () (at Assets/UXF/Scripts/UI/PopupController.cs:28).  UnityEngine.EventSystems.EventSystem:Update () (at Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:385).  
+5.710661,Log,Nonius Start Pos is: -0.5585139,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:118).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:184).  UnityEngine.Events.UnityEvent`1<UXF.Session>:Invoke (UXF.Session).  UXF.Session:Begin (stringstringintSystem.Collections.Generic.Dictionary`2<string object>UXF.Settings) (at Assets/UXF/Scripts/Session.cs:327).  UXF.UI.UIController/<>c__DisplayClass43_0:<TryBeginSessionFromUISequence>b__0 () (at Assets/UXF/Scripts/UI/UIController.cs:405).  UXF.UI.PopupController:OkPress () (at Assets/UXF/Scripts/UI/PopupController.cs:28).  UnityEngine.EventSystems.EventSystem:Update () (at Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:385).  
+9.921838,Log,speed is 6.02315E-05,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+9.932953,Log,speed is 0.0001158065,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+9.943076,Log,speed is 0.0001664215,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+9.954302,Log,speed is 0.000222552,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+9.965387,Log,speed is 0.0002779795,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+9.97658,Log,speed is 0.0003339405,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+9.987596,Log,speed is 0.000389017,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+9.998817,Log,speed is 0.000445126,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.00977,Log,speed is 0.0004998925,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.02103,Log,speed is 0.000556206,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.03199,Log,speed is 0.0006109945,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.04317,Log,speed is 0.000666893,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.05428,Log,speed is 0.000722423,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.0652,Log,speed is 0.0007770529,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.07656,Log,speed is 0.0008338229,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.08767,Log,speed is 0.0008893925,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.09861,Log,speed is 0.0009441089,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.10975,Log,speed is 0.0009998004,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.12094,Log,speed is 0.001055723,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.13202,Log,speed is 0.001111127,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.14301,Log,speed is 0.001166106,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.15415,Log,speed is 0.001221791,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.1653,Log,speed is 0.00127754,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.17651,Log,speed is 0.001333592,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.18761,Log,speed is 0.001389103,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.19861,Log,speed is 0.001444096,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.21006,Log,speed is 0.00150136,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.22088,Log,speed is 0.001555463,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.23196,Log,speed is 0.001610841,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.24309,Log,speed is 0.001666483,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.25425,Log,speed is 0.001722299,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.26527,Log,speed is 0.001777406,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.27639,Log,speed is 0.001833006,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.28762,Log,speed is 0.001889123,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.29868,Log,speed is 0.001944431,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.30975,Log,speed is 0.001999807,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.32132,Log,speed is 0.002057631,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.33208,Log,speed is 0.002111438,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.34316,Log,speed is 0.00216682,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.35458,Log,speed is 0.002223944,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.36575,Log,speed is 0.002279794,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.3774,Log,speed is 0.002338025,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.38749,Log,speed is 0.0023885,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.39866,Log,speed is 0.002444341,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.40989,Log,speed is 0.002500499,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.42091,Log,speed is 0.002555572,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.43305,Log,speed is 0.002616298,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.44306,Log,speed is 0.002666356,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.45419,Log,speed is 0.002721985,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.46585,Log,speed is 0.002780281,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.47666,Log,speed is 0.00283432,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.48753,Log,speed is 0.002888683,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.49923,Log,speed is 0.00294717,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.50991,Log,speed is 0.003000614,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.5209,Log,speed is 0.003055531,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.53268,Log,speed is 0.003114446,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.54304,Log,speed is 0.003166229,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.55418,Log,speed is 0.003221944,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.56588,Log,speed is 0.003280446,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.57653,Log,speed is 0.003333703,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.58874,Log,speed is 0.003394721,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.59863,Log,speed is 0.003444191,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.60992,Log,speed is 0.003500622,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.62166,Log,speed is 0.003559347,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.63227,Log,speed is 0.003612399,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.64314,Log,speed is 0.003666752,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.65534,Log,speed is 0.003727765,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.66566,Log,speed is 0.00377936,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.6765,Log,speed is 0.003833563,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.68747,Log,speed is 0.0038884,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.69933,Log,speed is 0.003947686,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.71002,Log,speed is 0.004001147,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.72091,Log,speed is 0.004055609,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.73257,Log,speed is 0.004113893,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.74329,Log,speed is 0.004167478,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.75433,Log,speed is 0.004222712,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.76632,Log,speed is 0.004282658,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.77659,Log,speed is 0.004334005,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.78851,Log,speed is 0.004393609,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.79884,Log,speed is 0.004445248,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.8098,Log,speed is 0.004500041,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.82218,Log,speed is 0.004561955,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.832,Log,speed is 0.004611051,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.84305,Log,speed is 0.004666296,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.8555,Log,speed is 0.004728565,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.86543,Log,speed is 0.004778195,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.87632,Log,speed is 0.004832617,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.88826,Log,speed is 0.004892365,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.89865,Log,speed is 0.004944278,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.90971,Log,speed is 0.004999594,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.92164,Log,speed is 0.005059246,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.9321,Log,speed is 0.005111535,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.94353,Log,speed is 0.005168709,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.95518,Log,speed is 0.005226942,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.96536,Log,speed is 0.005277833,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.97644,Log,speed is 0.005333254,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.98763,Log,speed is 0.005389167,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+10.99971,Log,speed is 0.005449575,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.01003,Log,speed is 0.005501176,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.02166,Log,speed is 0.005559317,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.03203,Log,speed is 0.005611193,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.04312,Log,speed is 0.005666635,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.05532,Log,speed is 0.005727664,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.06526,Log,speed is 0.005777344,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.07638,Log,speed is 0.005832929,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.08899,Log,speed is 0.005895967,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.09866,Log,speed is 0.005944357,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.1098,Log,speed is 0.006000028,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.12242,Log,speed is 0.006063125,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.13209,Log,speed is 0.006111473,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.14314,Log,speed is 0.006166735,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.15514,Log,speed is 0.006226733,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.16573,Log,speed is 0.006279694,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.17661,Log,speed is 0.00633409,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.18829,Log,speed is 0.006392501,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.1989,Log,speed is 0.006445529,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.2108,Log,speed is 0.006505021,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.22132,Log,speed is 0.006557644,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.23211,Log,speed is 0.006611576,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.24462,Log,speed is 0.006674125,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.25465,Log,speed is 0.006724267,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.26531,Log,speed is 0.006777583,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.27657,Log,speed is 0.006833873,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.29007,Log,speed is 0.006901375,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.29881,Log,speed is 0.006945106,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.3097,Log,speed is 0.006999528,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.32167,Log,speed is 0.007059369,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.33204,Log,speed is 0.00711124,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.34312,Log,speed is 0.007166636,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.35629,Log,speed is 0.007232467,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.36548,Log,speed is 0.007278428,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.37649,Log,speed is 0.007333477,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.38838,Log,speed is 0.007392927,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+11.4017,Log,Discrepancy between two eyes was -0.06326467,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:162).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+11.4017,Log,Ending Trial,UnityEngine.Debug:Log (object).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:166).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+11.4017,Log,Running trial 2,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:113).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:184).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:178).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+11.4017,Log,The distance for this trial is: 9,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:117).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:184).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:178).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+11.4017,Log,Nonius Start Pos is: -0.9246879,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:118).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:184).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:178).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+11.4017,Log,EyeTracking: (LeftEye=Eye: (Gaze=EyeGaze: (X=0.07745361; Y=0.06565857; Z=0.9948273; Confidence=1); PupilPosition=PupilPosition: (X=0.5063618; Y=0.3900574; Confidence=1); Openness=(Openness=1; Confidence=1); PupilDilation=(PupilDilation=5.416199; Confidence=1);); RightEye=Eye: (Gaze=EyeGaze: (X=0.04722595; Y=-0.003479004; Z=0.9988708; Confidence=1); PupilPosition=PupilPosition: (X=0.5152515; Y=0.5185944; Confidence=1); Openness=(Openness=1; Confidence=1); PupilDilation=(PupilDilation=4.96553; Confidence=1);); CombinedGaze=EyeGaze: (X=0.0622406; Y=0.03076172; Z=0.9975739; Confidence=1);),UnityEngine.Debug:Log (object).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:74).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+11.4017,Log,0.5152515,UnityEngine.Debug:Log (object).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:84).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+11.4017,Log,0.5185944,UnityEngine.Debug:Log (object).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:85).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+11.4017,Log,RightGazeTarget is: (0.1 0.0),UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:88).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+11.4017,Log,LeftGazeTarget is: (0.1 0.0),UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:89).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+11.4017,Log,rightPupil is: (0.5 0.5),UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:90).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+11.4017,Log,leftPupil is: (0.5 0.4),UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:91).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+12.09937,Log,speed is 5.8963E-05,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.11069,Log,speed is 0.0001155665,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.12086,Log,speed is 0.000166418,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.13198,Log,speed is 0.0002220195,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.14319,Log,speed is 0.000278094,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.15424,Log,speed is 0.0003333115,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.16528,Log,speed is 0.000388511,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.1765,Log,speed is 0.000444625,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.18759,Log,speed is 0.0005000755,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.1986,Log,speed is 0.0005551039,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.20977,Log,speed is 0.0006110029,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.22092,Log,speed is 0.0006667184,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.23198,Log,speed is 0.0007220414,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.24318,Log,speed is 0.0007780099,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.25424,Log,speed is 0.0008333209,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.26523,Log,speed is 0.0008882839,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.2765,Log,speed is 0.0009446289,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.28763,Log,speed is 0.001000264,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.29862,Log,speed is 0.001055215,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.31111,Log,speed is 0.001117691,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.32086,Log,speed is 0.0011664,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.33196,Log,speed is 0.001221931,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.343,Log,speed is 0.001277128,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.35425,Log,speed is 0.001333398,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.36523,Log,speed is 0.001388294,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.37643,Log,speed is 0.001444295,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.38779,Log,speed is 0.001501056,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.39856,Log,speed is 0.001554949,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.40977,Log,speed is 0.001610966,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.421,Log,speed is 0.001667143,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.4319,Log,speed is 0.00172164,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.44313,Log,speed is 0.001777793,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.45432,Log,speed is 0.00183371,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.46577,Log,speed is 0.001890994,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.4765,Log,speed is 0.001944602,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.48765,Log,speed is 0.002000351,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.49865,Log,speed is 0.002055365,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.50978,Log,speed is 0.002111043,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.52097,Log,speed is 0.002166963,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.53211,Log,speed is 0.002222667,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.54306,Log,speed is 0.002277426,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.55426,Log,speed is 0.002333435,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.56531,Log,speed is 0.002388689,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.57659,Log,speed is 0.002445071,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.58761,Log,speed is 0.002500171,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.59858,Log,speed is 0.002555043,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.61048,Log,speed is 0.002614507,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.62091,Log,speed is 0.002666676,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.63187,Log,speed is 0.002721485,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.64425,Log,speed is 0.002783391,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.65424,Log,speed is 0.002833308,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.66527,Log,speed is 0.002888482,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.67732,Log,speed is 0.002948716,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.68761,Log,speed is 0.003000199,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.69963,Log,speed is 0.003060268,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.70985,Log,speed is 0.003111387,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.7209,Log,speed is 0.003166608,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.73281,Log,speed is 0.003226162,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.74389,Log,speed is 0.003281557,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.75426,Log,speed is 0.003333444,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.76596,Log,speed is 0.003391936,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.77668,Log,speed is 0.003445543,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.7876,Log,speed is 0.003500112,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.79931,Log,speed is 0.003558691,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.81013,Log,speed is 0.003612758,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.82174,Log,speed is 0.003670847,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.83299,Log,speed is 0.003727093,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.84313,Log,speed is 0.003777796,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.85431,Log,speed is 0.003833652,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.86532,Log,speed is 0.003888725,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.87769,Log,speed is 0.003950563,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.88767,Log,speed is 0.004000467,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.89995,Log,speed is 0.004061893,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.90992,Log,speed is 0.004111717,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.92094,Log,speed is 0.004166832,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.93361,Log,speed is 0.004230196,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.94314,Log,speed is 0.00427781,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.95439,Log,speed is 0.004334053,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.96594,Log,speed is 0.004391823,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.97686,Log,speed is 0.004446439,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.98763,Log,speed is 0.004500288,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+12.99933,Log,speed is 0.004558791,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.01028,Log,speed is 0.00461354,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.02105,Log,speed is 0.004667377,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.03273,Log,speed is 0.004725792,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.04377,Log,speed is 0.004780982,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.05506,Log,speed is 0.004837438,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.06538,Log,speed is 0.004889003,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.07661,Log,speed is 0.00494517,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.08779,Log,speed is 0.005001052,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.09984,Log,speed is 0.005061314,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.10995,Log,speed is 0.005111884,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.12095,Log,speed is 0.005166862,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.13256,Log,speed is 0.005224915,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.1431,Log,speed is 0.005277636,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.1544,Log,speed is 0.005334105,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.16635,Log,speed is 0.005393898,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.17645,Log,speed is 0.00544438,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.18748,Log,speed is 0.005499548,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.1992,Log,speed is 0.005558142,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.2101,Log,speed is 0.005612636,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.22095,Log,speed is 0.005666896,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.23258,Log,speed is 0.00572504,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.24402,Log,speed is 0.005782208,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.25485,Log,speed is 0.005836385,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.26542,Log,speed is 0.005889224,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.27649,Log,speed is 0.005944551,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.28826,Log,speed is 0.006003416,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.29883,Log,speed is 0.006056261,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.30989,Log,speed is 0.006111596,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.32226,Log,speed is 0.006173415,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.33195,Log,speed is 0.006221873,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.34317,Log,speed is 0.006277991,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.35426,Log,speed is 0.006333418,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.36612,Log,speed is 0.006392707,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.37643,Log,speed is 0.006444295,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.38761,Log,speed is 0.006500168,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.39979,Log,speed is 0.006561081,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.40984,Log,speed is 0.006611316,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.42093,Log,speed is 0.006666787,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.4337,Log,speed is 0.006730619,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.44328,Log,speed is 0.006778525,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.45427,Log,speed is 0.006833487,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.46616,Log,speed is 0.006892923,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.47694,Log,speed is 0.006946799,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.48882,Log,speed is 0.007006236,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.49867,Log,speed is 0.007055488,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.50991,Log,speed is 0.007111666,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.52153,Log,speed is 0.007169764,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.53201,Log,speed is 0.007222184,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.54311,Log,speed is 0.007277668,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.55494,Log,speed is 0.007336813,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.56573,Log,speed is 0.007390758,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.57648,Log,speed is 0.007444543,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.58883,Log,speed is 0.007506299,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.59884,Log,speed is 0.007556323,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.60997,Log,speed is 0.007611969,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.62206,Log,speed is 0.007672444,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.63219,Log,speed is 0.007723095,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.64321,Log,speed is 0.007778196,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.65425,Log,speed is 0.007833386,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.66659,Log,speed is 0.007895086,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.67656,Log,speed is 0.007944919,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.68773,Log,speed is 0.008000799,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.69946,Log,speed is 0.008059422,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.71002,Log,speed is 0.008112221,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.72103,Log,speed is 0.008167288,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.73282,Log,speed is 0.008226221,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.74389,Log,speed is 0.00828157,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.75545,Log,speed is 0.008339349,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.76531,Log,speed is 0.008388668,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.77655,Log,speed is 0.008444859,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.78863,Log,speed is 0.008505298,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.79858,Log,speed is 0.008555027,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.80984,Log,speed is 0.008611302,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.82236,Log,speed is 0.008673935,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.83232,Log,speed is 0.008723714,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.84315,Log,speed is 0.008777884,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.85542,Log,speed is 0.008839243,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.86545,Log,speed is 0.008889377,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.87656,Log,speed is 0.00894492,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.88869,Log,speed is 0.009005561,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.89872,Log,speed is 0.009055726,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.91113,Log,speed is 0.009117752,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.92089,Log,speed is 0.009166597,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.93203,Log,speed is 0.009222277,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.94328,Log,speed is 0.009278525,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.95556,Log,speed is 0.009339931,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.96535,Log,speed is 0.009388876,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.97651,Log,speed is 0.009444656,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+13.98825,Log,speed is 0.009503379,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.23299,Log,speed is 6.01555E-05,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.24501,Log,speed is 0.000120241,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.25423,Log,speed is 0.0001663165,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.26553,Log,speed is 0.000222825,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.27647,Log,speed is 0.0002775545,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.28782,Log,speed is 0.0003342595,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.29872,Log,speed is 0.000388782,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.30986,Log,speed is 0.0004444985,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.32091,Log,speed is 0.0004997345,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.33202,Log,speed is 0.000555292,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.34343,Log,speed is 0.0006123305,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.35428,Log,speed is 0.000666605,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.36541,Log,speed is 0.0007222505,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.37649,Log,speed is 0.000777634,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.38767,Log,speed is 0.0008335555,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.39871,Log,speed is 0.0008887255,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.40991,Log,speed is 0.0009447554,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.42101,Log,speed is 0.001000214,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.432,Log,speed is 0.0010552,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.44307,Log,speed is 0.00111055,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.45426,Log,speed is 0.00116646,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.46543,Log,speed is 0.00122232,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.47648,Log,speed is 0.001277594,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.48761,Log,speed is 0.001333244,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.49871,Log,speed is 0.00138873,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.50974,Log,speed is 0.001443863,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.52097,Log,speed is 0.001500056,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.53212,Log,speed is 0.001555784,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.7217,Log,speed is 5.95425E-05,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.73278,Log,speed is 0.0001149125,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.74313,Log,speed is 0.000166698,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.75426,Log,speed is 0.000222331,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.76538,Log,speed is 0.000277941,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.77631,Log,speed is 0.000332565,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.78756,Log,speed is 0.0003888415,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.7987,Log,speed is 0.000444509,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.80986,Log,speed is 0.0005003415,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.82111,Log,speed is 0.000556589,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.83193,Log,speed is 0.0006106551,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.84308,Log,speed is 0.0006664426,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+14.85424,Log,speed is 0.0007222125,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.03285,Log,speed is 5.8355E-05,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.04633,Log,speed is 0.000125794,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.05551,Log,speed is 0.0001716735,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.06536,Log,speed is 0.000220903,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.07663,Log,speed is 0.000277259,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.08796,Log,speed is 0.0003339135,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.09864,Log,speed is 0.000387311,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.10982,Log,speed is 0.0004432405,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.12119,Log,speed is 0.0005000765,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.21084,Log,speed is 6.0509E-05,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.22178,Log,speed is 0.000115173,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.232,Log,speed is 0.0001663035,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.24315,Log,speed is 0.0002220165,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.25427,Log,speed is 0.000277646,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.26522,Log,speed is 0.0003323715,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.27652,Log,speed is 0.000388873,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.28757,Log,speed is 0.0004441275,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.29869,Log,speed is 0.0004997235,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.30998,Log,speed is 0.0005561775,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.3209,Log,speed is 0.000610807,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.33196,Log,speed is 0.000666066,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.34326,Log,speed is 0.000722588,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.35421,Log,speed is 0.000777315,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.36537,Log,speed is 0.0008331275,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.37667,Log,speed is 0.00088962,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.52164,Log,speed is 5.65755E-05,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.5329,Log,speed is 0.0001128375,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.54307,Log,speed is 0.0001637075,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.55437,Log,speed is 0.000220215,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.56539,Log,speed is 0.000275289,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.57648,Log,speed is 0.0003307545,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.58761,Log,speed is 0.000386405,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.74456,Log,speed is 6.2204E-05,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.75498,Log,speed is 0.0001143315,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.76542,Log,speed is 0.0001664965,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.77635,Log,speed is 0.00022115,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.78764,Log,speed is 0.000277635,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.79863,Log,speed is 0.000332589,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.80993,Log,speed is 0.000389079,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:145).  
+15.97767,Log,Discrepancy between two eyes was -0.06659164,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:162).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+15.97767,Log,Ending Trial,UnityEngine.Debug:Log (object).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:166).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+15.97767,Log,Running trial 3,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:113).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:184).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:178).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+15.97767,Log,The distance for this trial is: 5,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:117).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:184).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:178).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+15.97767,Log,Nonius Start Pos is: 0.6475146,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:118).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:184).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:178).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+15.97767,Log,EyeTracking: (LeftEye=Eye: (Gaze=EyeGaze: (X=0.07759094; Y=0.07327271; Z=0.994278; Confidence=1); PupilPosition=PupilPosition: (X=0.504245; Y=0.3893189; Confidence=1); Openness=(Openness=1; Confidence=1); PupilDilation=(PupilDilation=5.840607; Confidence=1);); RightEye=Eye: (Gaze=EyeGaze: (X=0.03695679; Y=-0.0005493164; Z=0.9993134; Confidence=1); PupilPosition=PupilPosition: (X=0.5175659; Y=0.5119092; Confidence=1); Openness=(Openness=1; Confidence=1); PupilDilation=(PupilDilation=5.3992; Confidence=1);); CombinedGaze=EyeGaze: (X=0.0594635; Y=0.0402832; Z=0.997406; Confidence=1);),UnityEngine.Debug:Log (object).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:74).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+15.97767,Log,0.5175659,UnityEngine.Debug:Log (object).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:84).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+15.97767,Log,0.5119092,UnityEngine.Debug:Log (object).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:85).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+15.97767,Log,RightGazeTarget is: (0.1 0.0),UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:88).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+15.97767,Log,LeftGazeTarget is: (0.1 0.0),UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:89).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+15.97767,Log,rightPupil is: (0.5 0.5),UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:90).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+15.97767,Log,leftPupil is: (0.5 0.4),UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:91).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+16.42189,Log,speed is -6.04855E-05,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.43311,Log,speed is -0.00011659,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.44313,Log,speed is -0.000166663,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.45417,Log,speed is -0.0002218815,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.46539,Log,speed is -0.000277968,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.47658,Log,speed is -0.000333923,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.48758,Log,speed is -0.0003889345,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.49892,Log,speed is -0.000445605,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.50994,Log,speed is -0.0005007019,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.52092,Log,speed is -0.0005556105,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.53206,Log,speed is -0.0006113144,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.54313,Log,speed is -0.0006666459,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.55428,Log,speed is -0.000722402,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.56529,Log,speed is -0.0007774804,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.57655,Log,speed is -0.0008337669,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.58813,Log,speed is -0.0008916794,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.59879,Log,speed is -0.0009449889,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.60985,Log,speed is -0.001000256,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.62088,Log,speed is -0.001055406,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.63204,Log,speed is -0.001111209,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.64314,Log,speed is -0.001166749,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.65425,Log,speed is -0.001222273,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.66525,Log,speed is -0.001277245,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.67649,Log,speed is -0.001333455,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.68756,Log,speed is -0.001388823,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.69877,Log,speed is -0.001444861,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.7097,Log,speed is -0.001499527,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.7209,Log,speed is -0.001555508,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.73203,Log,speed is -0.00161119,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.7433,Log,speed is -0.001667502,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.75442,Log,speed is -0.0017231,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.76537,Log,speed is -0.001777874,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.77653,Log,speed is -0.001833652,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.78756,Log,speed is -0.001888837,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.79868,Log,speed is -0.001944403,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.80989,Log,speed is -0.002000472,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.821,Log,speed is -0.002056007,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.83196,Log,speed is -0.002110815,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.84331,Log,speed is -0.002167551,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.85428,Log,speed is -0.002222435,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.86523,Log,speed is -0.002277168,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.87646,Log,speed is -0.002333327,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.88768,Log,speed is -0.002389427,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.89894,Log,speed is -0.002445722,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.91001,Log,speed is -0.002501072,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.92156,Log,speed is -0.002558805,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.93227,Log,speed is -0.002612361,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.94321,Log,speed is -0.002667067,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.95523,Log,speed is -0.002727185,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.9663,Log,speed is -0.002782537,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.97662,Log,speed is -0.002834146,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.98771,Log,speed is -0.002889586,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+16.99965,Log,speed is -0.002949246,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.01005,Log,speed is -0.003001269,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.02094,Log,speed is -0.003055742,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.03271,Log,speed is -0.003114594,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.0434,Log,speed is -0.003168041,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.05418,Log,speed is -0.003221901,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.066,Log,speed is -0.003281011,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.07667,Log,speed is -0.003334359,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.08864,Log,speed is -0.003394219,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.09873,Log,speed is -0.003444681,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.10972,Log,speed is -0.003499608,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.12163,Log,speed is -0.003559183,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.13259,Log,speed is -0.00361396,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.14331,Log,speed is -0.003667591,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.15497,Log,speed is -0.003725887,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.1655,Log,speed is -0.00377854,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.17657,Log,speed is -0.003833865,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.18815,Log,speed is -0.003891758,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.19872,Log,speed is -0.003944619,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.20998,Log,speed is -0.004000923,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.22095,Log,speed is -0.004055777,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.23276,Log,speed is -0.004114812,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.24377,Log,speed is -0.004169855,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.25433,Log,speed is -0.004222676,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.26595,Log,speed is -0.004280756,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.27691,Log,speed is -0.004335553,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.28908,Log,speed is -0.00439642,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.29997,Log,speed is -0.004450863,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.31454,Log,speed is -0.004523729,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.32092,Log,speed is -0.004555637,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.33215,Log,speed is -0.004611751,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.34309,Log,speed is -0.004666473,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.35449,Log,speed is -0.004723495,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.36546,Log,speed is -0.004778308,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.37661,Log,speed is -0.004834079,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.38791,Log,speed is -0.004890583,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.39969,Log,speed is -0.004949457,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.41076,Log,speed is -0.005004846,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.42086,Log,speed is -0.005055333,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+17.43196,Log,speed is -0.00511082,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.27779,Log,speed is -6.1688E-05,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.29155,Log,speed is -0.0001304905,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.29881,Log,speed is -0.000166783,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.31033,Log,speed is -0.000224399,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.32114,Log,speed is -0.000278427,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.33237,Log,speed is -0.000334606,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.34331,Log,speed is -0.000389287,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.3544,Log,speed is -0.0004447465,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.36545,Log,speed is -0.0005000165,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.37643,Log,speed is -0.0005549085,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.38769,Log,speed is -0.0006111955,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.39921,Log,speed is -0.000668806,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.40995,Log,speed is -0.0007224909,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.42109,Log,speed is -0.0007781985,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.43199,Log,speed is -0.000832684,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.44326,Log,speed is -0.000889064,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.45431,Log,speed is -0.000944284,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.4655,Log,speed is -0.001000233,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.47658,Log,speed is -0.001055635,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.48784,Log,speed is -0.001111955,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:141).  
+18.5994,Log,Discrepancy between two eyes was 0.3980082,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:162).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+18.5994,Log,Ending Trial,UnityEngine.Debug:Log (object).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:166).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+18.5994,Log,Running trial 4,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:113).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:184).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:178).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+18.5994,Log,The distance for this trial is: 6,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:117).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:184).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:178).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+18.5994,Log,Nonius Start Pos is: 0.3041303,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:118).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:184).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:178).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+18.5994,Log,EyeTracking: (LeftEye=Eye: (Gaze=EyeGaze: (X=0.0509491; Y=0.05865479; Z=0.9969635; Confidence=1); PupilPosition=PupilPosition: (X=0.5187266; Y=0.380173; Confidence=1); Openness=(Openness=1; Confidence=1); PupilDilation=(PupilDilation=5.762253; Confidence=1);); RightEye=Eye: (Gaze=EyeGaze: (X=-0.004455566; Y=-0.001403809; Z=0.9999847; Confidence=1); PupilPosition=PupilPosition: (X=0.5394061; Y=0.4998092; Confidence=1); Openness=(Openness=1; Confidence=1); PupilDilation=(PupilDilation=5.347397; Confidence=1);); CombinedGaze=EyeGaze: (X=0.03942871; Y=0.04618835; Z=0.9981537; Confidence=1);),UnityEngine.Debug:Log (object).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:74).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+18.5994,Log,0.5394061,UnityEngine.Debug:Log (object).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:84).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+18.5994,Log,0.4998092,UnityEngine.Debug:Log (object).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:85).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+18.5994,Log,RightGazeTarget is: (0.0 0.0),UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:88).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+18.5994,Log,LeftGazeTarget is: (0.0 0.0),UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:89).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+18.5994,Log,rightPupil is: (0.5 0.5),UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:90).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+18.5994,Log,leftPupil is: (0.5 0.4),UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:91).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+20.63186,Log,Discrepancy between two eyes was 0.3041303,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:162).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+20.63186,Log,Ending Trial,UnityEngine.Debug:Log (object).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:166).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+20.63186,Log,Running trial 5,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:113).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:184).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:178).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+20.63186,Log,The distance for this trial is: 7,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:117).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:184).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:178).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+20.63186,Log,Nonius Start Pos is: -0.4230772,UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:PresentStimulus (UXF.Trial) (at Assets/Scripts/ExperimentGenerator.cs:118).  UnityEngine.Events.UnityEvent`1<UXF.Trial>:Invoke (UXF.Trial).  UXF.Trial:Begin () (at Assets/UXF/Scripts/Etc/Trial.cs:113).  UXF.Session:BeginNextTrial () (at Assets/UXF/Scripts/Session.cs:405).  ExperimentGenerator:BeginNext () (at Assets/Scripts/ExperimentGenerator.cs:184).  ExperimentGenerator:EndAndPrepare () (at Assets/Scripts/ExperimentGenerator.cs:178).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:155).  
+20.63186,Log,EyeTracking: (LeftEye=Eye: (Gaze=EyeGaze: (X=0.04988098; Y=0.05882263; Z=0.9970093; Confidence=1); PupilPosition=PupilPosition: (X=0.5165727; Y=0.3875753; Confidence=1); Openness=(Openness=1; Confidence=1); PupilDilation=(PupilDilation=5.932541; Confidence=1);); RightEye=Eye: (Gaze=EyeGaze: (X=0.002883911; Y=0.002410889; Z=0.9999847; Confidence=1); PupilPosition=PupilPosition: (X=0.536392; Y=0.5063941; Confidence=1); Openness=(Openness=1; Confidence=1); PupilDilation=(PupilDilation=5.498596; Confidence=1);); CombinedGaze=EyeGaze: (X=0.02713013; Y=0.0315094; Z=0.9991302; Confidence=1);),UnityEngine.Debug:Log (object).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:74).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+20.63186,Log,0.536392,UnityEngine.Debug:Log (object).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:84).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+20.63186,Log,0.5063941,UnityEngine.Debug:Log (object).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:85).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+20.63186,Log,RightGazeTarget is: (0.0 0.0),UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:88).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+20.63186,Log,LeftGazeTarget is: (0.0 0.0),UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:89).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+20.63186,Log,rightPupil is: (0.5 0.5),UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:90).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  
+20.63186,Log,leftPupil is: (0.5 0.4),UnityEngine.Debug:LogFormat (stringobject[]).  ExperimentGenerator:getEyeTracking () (at Assets/Scripts/ExperimentGenerator.cs:91).  ExperimentGenerator:Update () (at Assets/Scripts/ExperimentGenerator.cs:156).  

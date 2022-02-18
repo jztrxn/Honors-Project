@@ -127,24 +127,31 @@ public class ExperimentGenerator : MonoBehaviour
     }
     
     private float totalTime;
+    private float speed;
+    private float maxSpeed = 0.01f;
+    public float acceleration;
+
+    public float waitSeconds;
+    private float nextTrialTimer = 0.0f;
     private void Update()
     {
-        //Debug.LogFormat("RightGazeTarget is: {0}", rightGazeTarget);
-        //Debug.LogFormat("LeftGazeTarget is: {0}", leftGazeTarget);
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && (Mathf.Abs(speed) < maxSpeed))
         {
-            totalTime = Time.deltaTime * stepSize;
-            noniusLine.transform.Translate(-totalTime, 0f, 0f);
+            speed = speed - acceleration * Time.deltaTime;
+            Debug.LogFormat("speed is {0}", speed);
+        } else if (Input.GetKey(KeyCode.D) && (Mathf.Abs(speed) < maxSpeed))
+        {
+            speed = speed + acceleration * Time.deltaTime;
+            Debug.LogFormat("speed is {0}", speed);
+        } else
+        {
+            speed = 0;
         }
+        noniusLine.transform.Translate(speed, 0f, 0f);
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextTrialTimer)
         {
-            noniusLine.transform.Translate(+totalTime, 0f, 0f);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-
+            nextTrialTimer = Time.time + waitSeconds;
             EndAndPrepare();
             getEyeTracking();
         }
@@ -168,7 +175,7 @@ public class ExperimentGenerator : MonoBehaviour
         else
         {
             // begin next after 2 second delay
-            Invoke("BeginNext", 2.0f);
+            BeginNext();
         }
     }
 
