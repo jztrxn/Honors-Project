@@ -125,19 +125,21 @@ public class ExperimentGenerator : MonoBehaviour
 
         //Invoke("EndAndPrepare", 1f);
     }
-
+    
+    private float totalTime;
     private void Update()
     {
         //Debug.LogFormat("RightGazeTarget is: {0}", rightGazeTarget);
         //Debug.LogFormat("LeftGazeTarget is: {0}", leftGazeTarget);
         if (Input.GetKey(KeyCode.A))
         {
-            noniusLine.transform.Translate(-stepSize, 0f, 0f);
+            totalTime = Time.deltaTime * stepSize;
+            noniusLine.transform.Translate(-totalTime, 0f, 0f);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            noniusLine.transform.Translate(+stepSize, 0f, 0f);
+            noniusLine.transform.Translate(+totalTime, 0f, 0f);
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -166,7 +168,7 @@ public class ExperimentGenerator : MonoBehaviour
         else
         {
             // begin next after 2 second delay
-            BeginNext();
+            Invoke("BeginNext", 2.0f);
         }
     }
 
