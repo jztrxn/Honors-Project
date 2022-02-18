@@ -1,5 +1,5 @@
 {
-	"trials_per_block": 10,
+	"trials_per_block": 5,
 	"random_nonius": true,
 	"random_distance": true
 }
