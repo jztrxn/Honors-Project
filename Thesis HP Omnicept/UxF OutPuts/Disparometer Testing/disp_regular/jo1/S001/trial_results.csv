@@ -1,0 +1,11 @@
+experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,Scene Distance,Nonius Start,Discrepancy
+disp_regular,jo1,1,1,1,1,4.759691,16.79615,3,1,0.007799
+disp_regular,jo1,1,2,1,2,16.79615,23.5253,4,1,-0.001284
+disp_regular,jo1,1,3,1,3,23.5253,29.57764,5,1,-0.011878
+disp_regular,jo1,1,4,1,4,29.57764,33.16562,6,1,0.00046
+disp_regular,jo1,1,5,1,5,33.16562,41.42107,7,1,-0.006744
+disp_regular,jo1,1,6,2,1,41.42107,44.60954,8,1,-0.018346
+disp_regular,jo1,1,7,2,2,44.60954,52.84254,9,1,-0.005805
+disp_regular,jo1,1,8,2,3,52.84254,60.82531,10,1,-0.009307
+disp_regular,jo1,1,9,2,4,60.82531,64.28288,11,1,-0.010797
+disp_regular,jo1,1,10,2,5,64.28288,68.11683,12,1,-0.031214

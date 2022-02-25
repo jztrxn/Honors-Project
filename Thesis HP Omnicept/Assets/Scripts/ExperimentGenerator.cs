@@ -30,6 +30,7 @@ public class ExperimentGenerator : MonoBehaviour
         int numTrials = session.settings.GetInt("trials_per_block", 5);
 
         Block block1 = session.CreateBlock(numTrials);
+        
         Block block2 = session.CreateBlock(numTrials);
 
 
@@ -46,11 +47,11 @@ public class ExperimentGenerator : MonoBehaviour
 
             if (session.settings.GetBool("random_distance", false))
             {
-                trial.settings.SetValue("scene_distance", Random.Range(2, 10));
+                trial.settings.SetValue("scene_distance", Random.Range(3, 10));
             }
             else
             {
-                trial.settings.SetValue("scene_distance", (int)trial.number + 1);
+                trial.settings.SetValue("scene_distance", (int)trial.number + 2);
             }
         }
     }
@@ -99,14 +100,22 @@ public class ExperimentGenerator : MonoBehaviour
     public GameObject centerLine;
     public GameObject noniusLine;
     public GameObject fusionLock;
+    public GameObject plane;
+    public float lineDistance;
+    public float scaleFactor;
     public float stepSize;
 
     public void SetObjects(float distance, float noniusStart)
     {
-        centerLine.transform.localPosition = new Vector3(0f, 0.5f, distance);
+        //fusionLock.transform.localScale = new Vector3(scaleFactor * distance, scaleFactor * distance, 1f);
+        plane.transform.localPosition = new Vector3(0f, 0.5f, distance);
+        centerLine.transform.localPosition = new Vector3(0f, 0.6f, distance);
         noniusLine.transform.localPosition = new Vector3(noniusStart, 0f, distance);
         fusionLock.transform.localPosition = new Vector3(0f, 0f, distance);
+        //Debug.LogFormat("fusionLock scale: {0}", fusionLock.transform.localScale);
+        //Debug.LogFormat("fusionLock position: {0}", fusionLock.transform.position);
     }
+
 
     public void PresentStimulus(Trial trial)
     {
@@ -125,12 +134,12 @@ public class ExperimentGenerator : MonoBehaviour
 
         //Invoke("EndAndPrepare", 1f);
     }
+
     
     private float totalTime;
     private float speed;
-    private float maxSpeed = 0.01f;
+    private float maxSpeed = 0.02f;
     public float acceleration;
-
     public float waitSeconds;
     private float nextTrialTimer = 0.0f;
     private void Update()
@@ -138,11 +147,11 @@ public class ExperimentGenerator : MonoBehaviour
         if (Input.GetKey(KeyCode.A) && (Mathf.Abs(speed) < maxSpeed))
         {
             speed = speed - acceleration * Time.deltaTime;
-            Debug.LogFormat("speed is {0}", speed);
+            //Debug.LogFormat("speed is {0}", speed);
         } else if (Input.GetKey(KeyCode.D) && (Mathf.Abs(speed) < maxSpeed))
         {
             speed = speed + acceleration * Time.deltaTime;
-            Debug.LogFormat("speed is {0}", speed);
+            //Debug.LogFormat("speed is {0}", speed);
         } else
         {
             speed = 0;
@@ -170,11 +179,9 @@ public class ExperimentGenerator : MonoBehaviour
         if (Session.instance.CurrentTrial == Session.instance.LastTrial)
         {
             Session.instance.End();
-            
         }
         else
         {
-            // begin next after 2 second delay
             BeginNext();
         }
     }

@@ -14,12 +14,15 @@ public class FusionLockScaling : MonoBehaviour
         
     }
 
+    private float zPos = 0f;
+    //public GameObject cube;
     // Update is called once per frame
     void Update()
     {
-        float zLoc = fusionLock.transform.position.z;
-        scaleFactor *= zLoc;
-        Vector3 scale = fusionLock.transform.localScale;
-        fusionLock.transform.localScale = scale * zLoc;
+        zPos = this.gameObject.transform.position.z;
+        this.gameObject.transform.localScale = new Vector3(0.1f * zPos, 0.1f * zPos, 1f);
+        this.gameObject.transform.localPosition = new Vector3(0f, 0f, zPos);
+        //cube.transform.position = new Vector3(0, 0, zPos);
+
     }
 }
