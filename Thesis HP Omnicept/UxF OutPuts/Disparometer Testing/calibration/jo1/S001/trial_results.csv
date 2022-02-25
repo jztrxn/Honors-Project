@@ -1,0 +1,6 @@
+experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,target_x_pos,right eye pupil,left eye pupil
+calibration,jo1,1,1,1,1,29.61463,40.30307,-0.2,,
+calibration,jo1,1,2,1,2,40.30307,42.14854,-0.1,(0.4748738_ 0.7980924),(0.4820922_ 0.7495081)
+calibration,jo1,1,3,1,3,42.14854,44.68307,0,(0.5031952_ 0.8013303),(0.5125405_ 0.752013)
+calibration,jo1,1,4,1,4,44.68307,46.60508,0.1,(0.5386233_ 0.8036717),(0.5426962_ 0.7568681)
+calibration,jo1,1,5,1,5,46.60508,48.59718,,,
