@@ -8,8 +8,6 @@ using HP.Omnicept.Messaging.Messages;
 
 public class ExperimentGenerator : MonoBehaviour
 {
-    
-
 
     private GliaBehaviour _gliaBehaviour = null;
     private GliaBehaviour gliaBehaviour
@@ -91,8 +89,10 @@ public class ExperimentGenerator : MonoBehaviour
         Debug.LogFormat("rightPupil is: {0}", rightPupilTarget);
         Debug.LogFormat("leftPupil is: {0}", leftPupilTarget);
 
-        Session.instance.CurrentTrial.result["right eye pupil"] = (rPupilX, rPupilY);
-        Session.instance.CurrentTrial.result["left eye pupil"] = (lPupilX, lPupilY);
+        Session.instance.CurrentTrial.result["right Pupil X"] = rPupilX;
+        Session.instance.CurrentTrial.result["right Pupil Y"] = rPupilY;
+        Session.instance.CurrentTrial.result["left pupil X"] = lPupilX;
+        Session.instance.CurrentTrial.result["left Pupil Y"] = lPupilY;
         //rightPupilSizeTarget = eyeTracking.RightEye.PupilDilation / 10f;
         //leftPupilSizeTarget = eyeTracking.LeftEye.PupilDilation / 10f;
     }
@@ -108,8 +108,8 @@ public class ExperimentGenerator : MonoBehaviour
     public void SetObjects(float distance, float noniusStart)
     {
         //fusionLock.transform.localScale = new Vector3(scaleFactor * distance, scaleFactor * distance, 1f);
-        plane.transform.localPosition = new Vector3(0f, 0.5f, distance);
-        centerLine.transform.localPosition = new Vector3(0f, 0.6f, distance);
+        plane.transform.localPosition = new Vector3(0f, 1.5f, distance);
+        centerLine.transform.localPosition = new Vector3(0f, 1.5f, distance);
         noniusLine.transform.localPosition = new Vector3(noniusStart, 0f, distance);
         fusionLock.transform.localPosition = new Vector3(0f, 0f, distance);
         //Debug.LogFormat("fusionLock scale: {0}", fusionLock.transform.localScale);

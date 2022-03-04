@@ -53,14 +53,37 @@ public class CalibrationManager : MonoBehaviour
             
         }
 
+        if (session.settings.GetBool("nine_point_calibration", true))
+        {
+            Debug.Log("nine_point_calibration bool true");
+            //float cm_shift = session.settings.GetFloat("cm_shift", 0.1f);
+            int trialNum = 1;
+            for (int i = -1; i <= 1; i++)
+            {
+                for (int j = -1; j <= 1; j++)
+                {
+                    Trial currTrial = block1.GetRelativeTrial(trialNum);
+                    currTrial.settings.SetValue("cube_x_pos", 0 + ((cm_shift/100f) * i));
+                    currTrial.settings.SetValue("cube_y_pos", 0 + ((cm_shift/100f) * j));
+                    trialNum += 1;
+                    Debug.LogFormat("trial: {0}, x_pos: {1}, y_pos: {2}", currTrial.number, currTrial.settings.GetFloat("cube_x_pos"),
+                                        currTrial.settings.GetFloat("cube_y_pos"));
+                }
+                
+            }
+        }
         if (session.settings.GetBool("calibration", true))
         {
+
             Debug.Log("calibration bool true");
             //float cm_shift = session.settings.GetFloat("cm_shift", 0.1f);
-            for (int i = -5; i < numTrials -5; i++)
+            int trialNum = 1;
+            for (int i = -5; i < 5; i++)
             {
-                Trial currTrial = block1.GetRelativeTrial(i + 6);
-                currTrial.settings.SetValue("cube_x_pos", 0 + (cm_shift * i));
+                Trial currTrial = block1.GetRelativeTrial(trialNum);
+                currTrial.settings.SetValue("cube_x_pos", 0 + ((cm_shift/100f) * i));
+                currTrial.settings.SetValue("cube_y_pos", 0);
+                trialNum += 1;
                 Debug.LogFormat("trial: {0}, x_pos: {1}", currTrial.number, currTrial.settings.GetFloat("cube_x_pos"));
             }
         }
@@ -93,17 +116,19 @@ public class CalibrationManager : MonoBehaviour
         float rPupilY = eyeTracking.RightEye.PupilPosition.Y;
         float lPupilX = eyeTracking.LeftEye.PupilPosition.X;
         float lPupilY = eyeTracking.LeftEye.PupilPosition.Y;
-        Debug.Log(rPupilX);
-        Debug.Log(rPupilY);
+        //Debug.Log(rPupilX);
+        //Debug.Log(rPupilY);
         rightPupilTarget = new Vector2(rPupilX, rPupilY);
         leftPupilTarget = new Vector2(lPupilX, lPupilY);
-        Debug.LogFormat("RightGazeTarget is: {0}", rightGazeTarget);
-        Debug.LogFormat("LeftGazeTarget is: {0}", leftGazeTarget);
-        Debug.LogFormat("rightPupil is: {0}", rightPupilTarget);
-        Debug.LogFormat("leftPupil is: {0}", leftPupilTarget);
+        //Debug.LogFormat("RightGazeTarget is: {0}", rightGazeTarget);
+        //Debug.LogFormat("LeftGazeTarget is: {0}", leftGazeTarget);
+        //Debug.LogFormat("rightPupil is: {0}", rightPupilTarget);
+        //Debug.LogFormat("leftPupil is: {0}", leftPupilTarget);
 
-        Session.instance.CurrentTrial.result["right eye pupil"] = (rPupilX, rPupilY);
-        Session.instance.CurrentTrial.result["left eye pupil"] = (lPupilX, lPupilY);
+        Session.instance.CurrentTrial.result["right Pupil X"] = rPupilX;
+        Session.instance.CurrentTrial.result["right Pupil Y"] = rPupilY;
+        Session.instance.CurrentTrial.result["left Pupil X"] = lPupilX;
+        Session.instance.CurrentTrial.result["left Pupil Y"] = lPupilY;
         //rightPupilSizeTarget = eyeTracking.RightEye.PupilDilation / 10f;
         //leftPupilSizeTarget = eyeTracking.LeftEye.PupilDilation / 10f;
     }
@@ -111,9 +136,9 @@ public class CalibrationManager : MonoBehaviour
     public GameObject centerLine;
     public float stepSize;
 
-    public void SetObjects(float distance, float cube_x_pos)
+    public void SetObjects(float distance, float cube_x_pos, float cube_y_pos)
     {
-        centerLine.transform.localPosition = new Vector3(cube_x_pos, 0.0f, distance);
+        centerLine.transform.localPosition = new Vector3(cube_x_pos, cube_y_pos, distance);
     }
 
     public void PresentStimulus(Trial trial)
@@ -121,17 +146,20 @@ public class CalibrationManager : MonoBehaviour
         Debug.LogFormat("Running Calibration Trial {0}", trial.number);
         int distance = trial.settings.GetInt("distance");
         float cube_x_pos = trial.settings.GetFloat("cube_x_pos");
+        float cube_y_pos = trial.settings.GetFloat("cube_y_pos");
         //int distance = trial.settings.GetInt("scene_distance");
         //float noniusStartPos = trial.settings.GetFloat("nonius_start_pos");
         //Debug.LogFormat("The distance for this trial is: {0}", distance);
         //Debug.LogFormat("Nonius Start Pos is: {0}", noniusStartPos);
 
-        Debug.LogFormat("Cube Position is: {0}", cube_x_pos);
+        Debug.LogFormat("Cube Position is: {0}, {1}", cube_x_pos, cube_y_pos);
         Session.instance.CurrentTrial.result["target_x_pos"] = cube_x_pos;
+        Session.instance.CurrentTrial.result["target_y_pos"] = cube_y_pos;
         //Session.instance.CurrentTrial.result["Scene Distance"] = distance;
         //Session.instance.CurrentTrial.result["Nonius Start"] = noniusStartPos;
 
-        SetObjects(distance, cube_x_pos);
+
+        SetObjects(distance, cube_x_pos, cube_y_pos);
         
 
         //Invoke("EndAndPrepare", 1f);
