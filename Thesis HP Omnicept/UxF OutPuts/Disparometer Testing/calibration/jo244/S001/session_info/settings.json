@@ -1,0 +1,7 @@
+{
+    "trials_per_block": 10,
+    "distance": 1,
+    "cm_shift": 0.1,
+    "calibration": true,
+    "nine_point_calibration": false
+}

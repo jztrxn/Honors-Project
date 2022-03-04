@@ -1,5 +1,6 @@
 {
-	"trials_per_block": 5,
+	"trials_per_block": 10,
 	"random_nonius": true,
-	"random_distance": true
+	"random_distance": false,
+	"scene_distances": [1,2,3,4,5,6,7,8,9,10]
 }

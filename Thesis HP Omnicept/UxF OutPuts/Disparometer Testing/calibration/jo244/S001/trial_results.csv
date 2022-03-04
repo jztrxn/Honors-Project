@@ -1,0 +1,5 @@
+experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,Scene Distance,Nonius Start,Discrepancy,right Pupil X,right Pupil Y,left pupil X,left Pupil Y
+calibration,jo244,1,1,1,1,8.469754,22.67977,0.6,1,-0.000957,,,,
+calibration,jo244,1,2,1,2,22.67977,27.2137,0.7,1,-0.005009,0.596666,0.477182,0.551157,0.389213
+calibration,jo244,1,3,1,3,27.2137,34.33878,0.8,1,-0.020093,0.631121,0.471543,0.571774,0.383106
+calibration,jo244,1,4,1,4,34.33878,39.48655,0.9,1,,0.63922,0.454623,0.57563,0.370747

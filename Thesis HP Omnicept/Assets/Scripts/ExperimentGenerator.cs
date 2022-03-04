@@ -22,14 +22,15 @@ public class ExperimentGenerator : MonoBehaviour
             return _gliaBehaviour;
         }
     }
-    
+
+    public float cm_shift;
     public void Generate(Session session)
     {
-        int numTrials = session.settings.GetInt("trials_per_block", 5);
+        int numTrials = session.settings.GetInt("trials_per_block", 10);
 
         Block block1 = session.CreateBlock(numTrials);
         
-        Block block2 = session.CreateBlock(numTrials);
+        //Block block2 = session.CreateBlock(numTrials);
 
 
         foreach (Trial trial in session.Trials)
@@ -40,7 +41,7 @@ public class ExperimentGenerator : MonoBehaviour
             }
             else
             {
-                trial.settings.SetValue("nonius_start_pos", 1f);
+                trial.settings.SetValue("nonius_start_pos", 0.5f);
             }
 
             if (session.settings.GetBool("random_distance", false))
@@ -48,8 +49,10 @@ public class ExperimentGenerator : MonoBehaviour
                 trial.settings.SetValue("scene_distance", Random.Range(3, 10));
             }
             else
-            {
-                trial.settings.SetValue("scene_distance", (int)trial.number + 2);
+            {   
+                trial.settings.SetValue("scene_distance", (0.5f + ((int)trial.number * 0.01f * cm_shift)));
+                Debug.LogFormat("trial distance: {0}", trial.settings.GetFloat("scene_distance"));
+                // find better way to change the distances
             }
         }
     }
@@ -80,14 +83,14 @@ public class ExperimentGenerator : MonoBehaviour
         float rPupilY = eyeTracking.RightEye.PupilPosition.Y;
         float lPupilX = eyeTracking.LeftEye.PupilPosition.X;
         float lPupilY = eyeTracking.LeftEye.PupilPosition.Y;
-        Debug.Log(rPupilX);
-        Debug.Log(rPupilY);
+        //Debug.Log(rPupilX);
+        //Debug.Log(rPupilY);
         rightPupilTarget = new Vector2(rPupilX, rPupilY);
         leftPupilTarget = new Vector2(lPupilX, lPupilY);
-        Debug.LogFormat("RightGazeTarget is: {0}", rightGazeTarget);
-        Debug.LogFormat("LeftGazeTarget is: {0}", leftGazeTarget);
-        Debug.LogFormat("rightPupil is: {0}", rightPupilTarget);
-        Debug.LogFormat("leftPupil is: {0}", leftPupilTarget);
+        //Debug.LogFormat("RightGazeTarget is: {0}", rightGazeTarget);
+        //Debug.LogFormat("LeftGazeTarget is: {0}", leftGazeTarget);
+        //Debug.LogFormat("rightPupil is: {0}", rightPupilTarget);
+        //Debug.LogFormat("leftPupil is: {0}", leftPupilTarget);
 
         Session.instance.CurrentTrial.result["right Pupil X"] = rPupilX;
         Session.instance.CurrentTrial.result["right Pupil Y"] = rPupilY;
@@ -108,8 +111,8 @@ public class ExperimentGenerator : MonoBehaviour
     public void SetObjects(float distance, float noniusStart)
     {
         //fusionLock.transform.localScale = new Vector3(scaleFactor * distance, scaleFactor * distance, 1f);
-        plane.transform.localPosition = new Vector3(0f, 1.5f, distance);
-        centerLine.transform.localPosition = new Vector3(0f, 1.5f, distance);
+        plane.transform.localPosition = new Vector3(0f, 0.5f, distance);
+        centerLine.transform.localPosition = new Vector3(0f, 0.25f, distance);
         noniusLine.transform.localPosition = new Vector3(noniusStart, 0f, distance);
         fusionLock.transform.localPosition = new Vector3(0f, 0f, distance);
         //Debug.LogFormat("fusionLock scale: {0}", fusionLock.transform.localScale);
@@ -121,7 +124,7 @@ public class ExperimentGenerator : MonoBehaviour
     {
         Debug.LogFormat("Running trial {0}", trial.number);
 
-        int distance = trial.settings.GetInt("scene_distance");
+        float distance = trial.settings.GetFloat("scene_distance");
         float noniusStartPos = trial.settings.GetFloat("nonius_start_pos");
         Debug.LogFormat("The distance for this trial is: {0}", distance);
         Debug.LogFormat("Nonius Start Pos is: {0}", noniusStartPos);
