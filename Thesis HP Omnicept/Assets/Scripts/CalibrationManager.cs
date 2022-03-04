@@ -78,10 +78,10 @@ public class CalibrationManager : MonoBehaviour
             Debug.Log("calibration bool true");
             //float cm_shift = session.settings.GetFloat("cm_shift", 0.1f);
             int trialNum = 1;
-            for (int i = -5; i < 5; i++)
+            for (int i = 0; i < 10; i++)
             {
                 Trial currTrial = block1.GetRelativeTrial(trialNum);
-                currTrial.settings.SetValue("cube_x_pos", 0 + ((cm_shift/100f) * i));
+                currTrial.settings.SetValue("cube_x_pos", 0.3f + ((cm_shift/100f) * i));
                 currTrial.settings.SetValue("cube_y_pos", 0);
                 trialNum += 1;
                 Debug.LogFormat("trial: {0}, x_pos: {1}", currTrial.number, currTrial.settings.GetFloat("cube_x_pos"));
@@ -138,7 +138,8 @@ public class CalibrationManager : MonoBehaviour
 
     public void SetObjects(float distance, float cube_x_pos, float cube_y_pos)
     {
-        centerLine.transform.localPosition = new Vector3(cube_x_pos, cube_y_pos, distance);
+        centerLine.transform.localPosition = new Vector3(0f, 0.4f, cube_x_pos);
+        Debug.Log(centerLine.transform.position);
     }
 
     public void PresentStimulus(Trial trial)

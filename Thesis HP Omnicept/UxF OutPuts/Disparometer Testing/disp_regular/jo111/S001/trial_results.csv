@@ -1,0 +1,5 @@
+experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,Scene Distance,Nonius Start,Discrepancy,right Pupil X,right Pupil Y,left pupil X,left Pupil Y
+disp_regular,jo111,1,1,1,1,15.55042,24.05353,0.6,0.5,0.003753,,,,
+disp_regular,jo111,1,2,1,2,24.05353,26.25412,0.7,0.5,-0.002982,0.589778,0.480473,0.538697,0.465101
+disp_regular,jo111,1,3,1,3,26.25412,28.74384,0.8,0.5,0.011451,0.59341,0.469538,0.538524,0.455472
+disp_regular,jo111,1,4,1,4,28.74384,31.4523,0.9,0.5,,0.602588,0.472339,0.542198,0.459892
