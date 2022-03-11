@@ -8,6 +8,7 @@ using HP.Omnicept.Messaging.Messages;
 
 public class CalibrationManager : MonoBehaviour
 {
+
     private GliaBehaviour _gliaBehaviour = null;
     private GliaBehaviour gliaBehaviour
     {
@@ -19,6 +20,79 @@ public class CalibrationManager : MonoBehaviour
             }
 
             return _gliaBehaviour;
+        }
+    }
+
+    private bool boundsFound = false;
+
+    public void Start()
+    {
+        boundsFound = false;
+        centerLineMoveable = true;
+        GetBounds();
+        centerLineMoveable = false;
+
+    }
+    
+    private float[] leftEyeBound;
+    private float[] rightEyeBound;
+    private Vector3 leftBoundLocation;
+    private Vector3 rightBoundLocation;
+    //float[] = [rightX, rightY, leftX, leftY]
+    private bool centerLineMoveable;
+    public void GetBounds()
+    {
+        Debug.Log("getting bounds");
+        findLeftBound();
+        findRightBound();
+        boundsFound = true;
+    }
+
+    private void findLeftBound()
+    {
+        leftBoundLocation = centerLine.transform.position;
+        Debug.LogFormat("leftBound Location is: {0}", leftBoundLocation);
+        leftEyeBound = getEyeTracking();
+        Debug.LogFormat("leftBound is: {0}", leftEyeBound);
+    }
+    private void findRightBound()
+    {
+        rightBoundLocation = centerLine.transform.position;
+        Debug.LogFormat("rightBound Location is: {0}", rightBoundLocation);
+        rightEyeBound = getEyeTracking();
+        Debug.LogFormat("rightBound is: {0}", rightEyeBound);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.A) && (Mathf.Abs(speed) < maxSpeed))
+        {
+            speed = speed - acceleration * Time.deltaTime;
+            Debug.LogFormat("speed is {0}", speed);
+        }
+        else if (Input.GetKey(KeyCode.D) && (Mathf.Abs(speed) < maxSpeed))
+        {
+            speed = speed + acceleration * Time.deltaTime;
+            Debug.LogFormat("speed is {0}", speed);
+        }
+        else
+        {
+            speed = 0;
+        }
+        if (centerLineMoveable)
+        {
+            centerLine.transform.Translate(speed, 0f, 0f);
+        }
+        
+
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextTrialTimer)
+        {
+            getEyeTracking();
+            if (boundsFound)
+            {
+                nextTrialTimer = Time.time + waitSeconds;
+                EndAndPrepare();
+            }
         }
     }
 
@@ -103,7 +177,7 @@ public class CalibrationManager : MonoBehaviour
         }
     }
 
-    public void getEyeTracking()
+    public float[] getEyeTracking()
     {
         var eyeTracking = gliaBehaviour.GetLastEyeTracking();
         Debug.Log(eyeTracking);
@@ -125,12 +199,22 @@ public class CalibrationManager : MonoBehaviour
         //Debug.LogFormat("rightPupil is: {0}", rightPupilTarget);
         //Debug.LogFormat("leftPupil is: {0}", leftPupilTarget);
 
-        Session.instance.CurrentTrial.result["right Pupil X"] = rPupilX;
-        Session.instance.CurrentTrial.result["right Pupil Y"] = rPupilY;
-        Session.instance.CurrentTrial.result["left Pupil X"] = lPupilX;
-        Session.instance.CurrentTrial.result["left Pupil Y"] = lPupilY;
-        //rightPupilSizeTarget = eyeTracking.RightEye.PupilDilation / 10f;
-        //leftPupilSizeTarget = eyeTracking.LeftEye.PupilDilation / 10f;
+        
+        float[] bound = new float[4];
+        bound[0] = rPupilX;
+        bound[1] = rPupilY;
+        bound[2] = lPupilX;
+        bound[3] = lPupilY;
+
+        if (boundsFound)
+        {
+            Session.instance.CurrentTrial.result["right Pupil X"] = rPupilX;
+            Session.instance.CurrentTrial.result["right Pupil Y"] = rPupilY;
+            Session.instance.CurrentTrial.result["left Pupil X"] = lPupilX;
+            Session.instance.CurrentTrial.result["left Pupil Y"] = lPupilY;
+        }
+
+        return bound;
     }
 
     public GameObject centerLine;
@@ -173,29 +257,7 @@ public class CalibrationManager : MonoBehaviour
 
     public float waitSeconds;
     private float nextTrialTimer = 0.0f;
-    private void Update()
-    {
-        if (Input.GetKey(KeyCode.A) && (Mathf.Abs(speed) < maxSpeed))
-        {
-            speed = speed - acceleration * Time.deltaTime;
-            Debug.LogFormat("speed is {0}", speed);
-        } else if (Input.GetKey(KeyCode.D) && (Mathf.Abs(speed) < maxSpeed))
-        {
-            speed = speed + acceleration * Time.deltaTime;
-            Debug.LogFormat("speed is {0}", speed);
-        } else
-        {
-            speed = 0;
-        }
-        //noniusLine.transform.Translate(speed, 0f, 0f);
-
-        if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextTrialTimer)
-        {
-            nextTrialTimer = Time.time + waitSeconds;
-            EndAndPrepare();
-            getEyeTracking();
-        }
-    }
+    
     public void EndAndPrepare()
     {
         //float discrepancy = noniusLine.transform.position.x;
