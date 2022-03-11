@@ -1064,7 +1064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CameraFloorOffsetObject: {fileID: 400310518}
-  m_RequestedTrackingMode: 1
+  m_RequestedTrackingMode: 0
   m_TrackingOriginMode: 1
   m_TrackingSpace: 0
   m_CameraYOffset: 1.36144
@@ -1427,12 +1427,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bda072e5117185941b27ce4addd3c602, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  acceleration: 0
+  waitSeconds: 0.5
   cm_shift: 10
   showEyeTrackingMessages: 1
   centerLine: {fileID: 1880249421}
   stepSize: 0
-  acceleration: 0
-  waitSeconds: 0.5
 --- !u!1 &1759167840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,7 +1747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114916036141644208, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
       propertyPath: onSessionBegin.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114916036141644208, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
       propertyPath: onSessionEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode

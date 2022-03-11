@@ -29,51 +29,78 @@ public class CalibrationManager : MonoBehaviour
     {
         boundsFound = false;
         centerLineMoveable = true;
-        GetBounds();
+        leftBoundFound = false;
+        rightBoundFound = false;
         centerLineMoveable = false;
 
+        GetBounds();
+        Generate(session);
+        BeginNext();
     }
     
     private float[] leftEyeBound;
     private float[] rightEyeBound;
+    private bool leftBoundFound;
+    private bool rightBoundFound;
     private Vector3 leftBoundLocation;
     private Vector3 rightBoundLocation;
     //float[] = [rightX, rightY, leftX, leftY]
     private bool centerLineMoveable;
-    public void GetBounds()
+    IEnumerator GetBounds()
     {
-        Debug.Log("getting bounds");
+        Debug.Log("getting bound left");
         findLeftBound();
+        while (leftBoundFound == false) { yield return null;  }
+        Debug.Log("getting bound right");
         findRightBound();
+        while (rightBoundFound == false) { yield return null; }
         boundsFound = true;
     }
 
     private void findLeftBound()
     {
-        leftBoundLocation = centerLine.transform.position;
-        Debug.LogFormat("leftBound Location is: {0}", leftBoundLocation);
-        leftEyeBound = getEyeTracking();
-        Debug.LogFormat("leftBound is: {0}", leftEyeBound);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            leftBoundLocation = centerLine.transform.position;
+            Debug.LogFormat("leftBound Location is: {0}", leftBoundLocation);
+            leftEyeBound = getEyeTracking();
+            Debug.LogFormat("leftBound is: {0}", leftEyeBound);
+            leftBoundFound = true;
+        }
+        
     }
     private void findRightBound()
     {
-        rightBoundLocation = centerLine.transform.position;
-        Debug.LogFormat("rightBound Location is: {0}", rightBoundLocation);
-        rightEyeBound = getEyeTracking();
-        Debug.LogFormat("rightBound is: {0}", rightEyeBound);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rightBoundLocation = centerLine.transform.position;
+            Debug.LogFormat("rightBound Location is: {0}", rightBoundLocation);
+            rightEyeBound = getEyeTracking();
+            Debug.LogFormat("rightBound is: {0}", rightEyeBound);
+            rightBoundFound = true;
+        }
+        
     }
+    
 
+    private float totalTime;
+    private float speed;
+    private float maxSpeed = 0.01f;
+    public float acceleration;
+
+    public float waitSeconds;
+    private float nextTrialTimer = 0.0f;
     private void Update()
     {
         if (Input.GetKey(KeyCode.A) && (Mathf.Abs(speed) < maxSpeed))
         {
             speed = speed - acceleration * Time.deltaTime;
-            Debug.LogFormat("speed is {0}", speed);
+            //Debug.LogFormat("speed is {0}", speed);
         }
         else if (Input.GetKey(KeyCode.D) && (Mathf.Abs(speed) < maxSpeed))
         {
             speed = speed + acceleration * Time.deltaTime;
-            Debug.LogFormat("speed is {0}", speed);
+            //Debug.LogFormat("speed is {0}", speed);
         }
         else
         {
@@ -85,7 +112,7 @@ public class CalibrationManager : MonoBehaviour
         }
         
 
-        if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextTrialTimer)
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextTrialTimer && boundsFound)
         {
             getEyeTracking();
             if (boundsFound)
@@ -96,6 +123,7 @@ public class CalibrationManager : MonoBehaviour
         }
     }
 
+    private UXF.Session session;
     public float cm_shift;
     public void Generate(Session session)
     {
@@ -250,13 +278,7 @@ public class CalibrationManager : MonoBehaviour
         //Invoke("EndAndPrepare", 1f);
     }
     
-    private float totalTime;
-    private float speed;
-    private float maxSpeed = 0.01f;
-    public float acceleration;
-
-    public float waitSeconds;
-    private float nextTrialTimer = 0.0f;
+    
     
     public void EndAndPrepare()
     {
