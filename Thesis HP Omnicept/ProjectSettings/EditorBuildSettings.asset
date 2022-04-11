@@ -4,7 +4,22 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/UXF/Examples/3_MultiScene_FootballAndRT/OtherScenes/ShootingExample.unity
+    guid: 1d5a4e0513b6be0428267c45d923520b
+  - enabled: 0
+    path: Assets/UXF/Examples/3_MultiScene_FootballAndRT/OtherScenes/ReactionExample.unity
+    guid: 7a79c722962e7d74eb856ff31b309b87
+  - enabled: 1
+    path: Assets/Scenes/test.unity
+    guid: 74c9f0a16f26d4749b6067e1e572ffdb
+  - enabled: 1
+    path: Assets/Scenes/Disparometer.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Calibration 1.unity
+    guid: f0fee2d27124afd4cb1ce914a41d9927
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 299451560e253b345adaac86e1d6d482, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 7dd6139d0bd001740b92e47bc5c02545, type: 2}
