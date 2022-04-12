@@ -52,9 +52,9 @@ namespace UXFExamples
 		// we will call this when the trial starts.
 		public void SetupTrial(Trial trial)
 		{
-			// IMPORTANT
-			// if this is the first trial in the block, we need to load a new scene.
-			if (trial.numberInBlock == 1)
+            // IMPORTANT
+            // if this is the first trial in the block, we need to load a new scene.
+            if (trial.numberInBlock == 1)
 			{
 				string scenePath = trial.settings.GetString("scene_name");
 
@@ -73,9 +73,9 @@ namespace UXFExamples
 
 		void SceneSpecificSetup(Trial trial)
 		{
-			// in order to perform scene-specific setup, we will find and our scene-specific scripts 
-			// there are lots of ways to do this, but this works fine here
-			if (trial.block.number == 1)
+            // in order to perform scene-specific setup, we will find and our scene-specific scripts 
+            // there are lots of ways to do this, but this works fine here
+            if (trial.block.number == 1)
 			{
 				FindObjectOfType<Example_ShootingTask>().StartShootingTaskTrial(trial);
 			}

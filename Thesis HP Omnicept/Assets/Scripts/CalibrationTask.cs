@@ -8,10 +8,16 @@ public class CalibrationTask : MonoBehaviour
     public GameObject marker;
     private float[] pupilCoords;
     private float xMarkerPos;
+    private float startHeight;
 
+    public void Start()
+    {
+        
+    }
     public void SetMarker(float xMarkerPos, float distance)
     {
-        marker.transform.position = new Vector3(xMarkerPos, 1.36144f, distance);
+        
+        marker.transform.position = new Vector3(xMarkerPos, DataHolder.deviceHeight + 0.05f, distance);
         Debug.LogFormat("Marker set at: {0}", marker.transform.position);
     }
 
@@ -30,8 +36,18 @@ public class CalibrationTask : MonoBehaviour
     public void StartCalibrationTaskTrial(Trial trial)
     {
         Debug.LogFormat("Running Calibration Trial {0}", trial.number);
+
+        if(trial.settings.GetString("eye_tag") == "Left Eye")
+        {
+            marker.layer = 6;
+        }
+        else
+        {
+            marker.layer = 7;
+        }
+
         xMarkerPos = trial.settings.GetFloat("marker_x_pos");
-        float distance = trial.settings.GetFloat("distance");
+        float distance = trial.settings.GetFloat("calibration_distance");
         SetMarker(xMarkerPos, distance);
         StartCoroutine(waitForSpacePress());
     }

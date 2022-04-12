@@ -19,20 +19,23 @@ public class DisparometerTask : MonoBehaviour
         Session.instance.CurrentTrial.result["RY Pupil"] = pupilCoords[3];
     }
 
-
+    public GameObject placeHolder;
     public GameObject centerLine;
     public GameObject noniusLine;
     public GameObject fusionLock;
+    public GameObject eyeMarker;
     public GameObject plane;
     //public float scaleFactor;
 
     public void SetObjects(float distance, float noniusStart)
     {
+        placeHolder.transform.position = new Vector3(0, DataHolder.deviceHeight + 0.1f, distance);
         //fusionLock.transform.localScale = new Vector3(scaleFactor * distance, scaleFactor * distance, 1f);
-        plane.transform.localPosition = new Vector3(0f, 0.5f, distance);
-        centerLine.transform.localPosition = new Vector3(0f, 0.25f, distance);
-        noniusLine.transform.localPosition = new Vector3(noniusStart, 0f, distance);
-        fusionLock.transform.localPosition = new Vector3(0f, 0f, distance);
+        plane.transform.localPosition = new Vector3(0f, 0f, 0f);
+        centerLine.transform.localPosition = new Vector3(0f, 0.25f, 0f);
+        noniusLine.transform.localPosition = new Vector3(noniusStart, 0f, 0f);
+        fusionLock.transform.localPosition = new Vector3(0f, 0f, 0f);
+        //eyeMarker.transform.localPosition = new Vector3(0f,)
         //Debug.LogFormat("fusionLock scale: {0}", fusionLock.transform.localScale);
         //Debug.LogFormat("fusionLock position: {0}", fusionLock.transform.position);
     }

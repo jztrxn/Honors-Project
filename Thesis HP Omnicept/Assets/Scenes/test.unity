@@ -376,12 +376,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114916036141644208, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
+      propertyPath: dontDestroyOnLoadNewScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114916036141644208, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
       propertyPath: onTrialEnd.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114916036141644208, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
       propertyPath: onSessionEnd.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114916036141644208, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
       propertyPath: onTrialBegin.m_PersistentCalls.m_Calls.Array.size
@@ -571,6 +575,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3482543129398382144, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
+      propertyPath: m_Text
+      value: 'Welcome to the Disparometer Strabismus Experiment. '
+      objectReference: {fileID: 0}
     - target: {fileID: 4267567203292169432, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -707,6 +715,13 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8563684494448067901, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
+      propertyPath: m_Text
+      value: "There will be two tasks. First will be a calibration task, where we
+        simply take measurements of your eyes. Simply look at the sphere and press
+        space. \n\nThe second part of the experiment is the disparometer test. When
+        you believe the markers are aligned, press the space bar. "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
 --- !u!114 &419112212 stripped
@@ -781,6 +796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cm_shift: 20
+  deviceGO: {fileID: 1170681613}
 --- !u!4 &1091845280
 Transform:
   m_ObjectHideFlags: 0

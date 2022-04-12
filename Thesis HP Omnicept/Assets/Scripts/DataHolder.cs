@@ -20,4 +20,6 @@ public class DataHolder
         {"botBound", null}
 
     };
+
+    public static float deviceHeight { get; set; }
 }
