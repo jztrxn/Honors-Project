@@ -29,11 +29,11 @@ public class DisparometerTask : MonoBehaviour
 
     public void SetObjects(float distance, float noniusStart)
     {
-        placeHolder.transform.position = new Vector3(0, DataHolder.deviceHeight + 0.1f, distance);
+        placeHolder.transform.localPosition = new Vector3(0, 0, distance);
         //fusionLock.transform.localScale = new Vector3(scaleFactor * distance, scaleFactor * distance, 1f);
         plane.transform.localPosition = new Vector3(0f, 0f, 0f);
-        centerLine.transform.localPosition = new Vector3(0f, 0.25f, 0f);
-        noniusLine.transform.localPosition = new Vector3(noniusStart, 0f, 0f);
+        centerLine.transform.localPosition = new Vector3(0f, 0.12f, 0f);
+        noniusLine.transform.localPosition = new Vector3(noniusStart, -0.12f, 0f);
         fusionLock.transform.localPosition = new Vector3(0f, 0f, 0f);
         //eyeMarker.transform.localPosition = new Vector3(0f,)
         //Debug.LogFormat("fusionLock scale: {0}", fusionLock.transform.localScale);

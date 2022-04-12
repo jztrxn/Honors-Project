@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab54ab55a69f2347bdfcc42ef5034dc, type: 3}
   m_Name: GliaSettings
   m_EditorClassIdentifier: 
-  LicenseType: 2
-  ClientIDBytes: 2a9f1f04697e19487648b7665388883c82a7b25187bda320c7e941eb57ee25d4ae9e3d193c23deb0684761807de57020
-  AccessKeyBytes: 4c5a747b85b7bb4784b9d4f7d0b76afb1372c3118c5a688c4561d7f87c4326dcfab67635cac80938ddfa5960e730d191577209a6c5dba6d4c9c4663193388b60ffa86bf59c80645dd6ea810a304d44ac
+  LicenseType: 1
+  ClientIDBytes: fde1754ce83427b92920b216364dc80906e1a7a3d7e1602d417bd9ed678270f25b711452c25b2570c8c99d9880aee95e
+  AccessKeyBytes: ff6c5f6e30c347324383d1525e8f4a76d2750de2df47747b42230888765e9a4e80cf74a260f57f4bc9475530febe62a5fe0800c5ea1f420dab719c611ab1e3d8b4ec541dc2d23075e0568c85dc53e149
   UnitySubscriptions:
   - m_label: Heart Rate
     m_enabled: 1

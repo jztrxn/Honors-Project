@@ -17,7 +17,7 @@ public class CalibrationTask : MonoBehaviour
     public void SetMarker(float xMarkerPos, float distance)
     {
         
-        marker.transform.position = new Vector3(xMarkerPos, DataHolder.deviceHeight + 0.05f, distance);
+        marker.transform.localPosition = new Vector3(xMarkerPos, 0f, distance);
         Debug.LogFormat("Marker set at: {0}", marker.transform.position);
     }
 

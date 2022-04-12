@@ -144,12 +144,12 @@ public class ExperimentHandler : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
-
+    /*
     public void Update()
     {
         if (Input.GetKey(KeyCode.T))
         {
             Session.instance.BeginNextTrial();
         }
-    }
+    }*/
 }
