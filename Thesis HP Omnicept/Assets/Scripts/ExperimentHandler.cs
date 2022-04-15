@@ -9,9 +9,11 @@ using UnityEngine.SceneManagement;
 
 public class ExperimentHandler : MonoBehaviour
 {
+    public GameObject GliaBehavior;
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(GliaBehavior);
     }
 
     public float cm_shift;
@@ -19,62 +21,123 @@ public class ExperimentHandler : MonoBehaviour
 
     public void Generate(Session session)
     {
-        //int numTrials = session.settings.GetInt("trials_per_block", 10);
+        // Calibration 7 points horizontal
+        Block block1 = session.CreateBlock(session.settings.GetInt("block1_numtrials", 25));
 
-        Block block1 = session.CreateBlock(session.settings.GetInt("block1_numtrials", 7));
-        Block block2 = session.CreateBlock(session.settings.GetInt("block2_numtrials", 7));
+        // Calibration 7 points horizontal
+        Block block2 = session.CreateBlock(session.settings.GetInt("block2_numtrials", 25));
+
+        
+        // Disparometer No Env Sequential 20cm apart
+        Block block3 = session.CreateBlock(session.settings.GetInt("block3_numtrials", 7));
+        // Disparometer No Env Random 20cm apart
+        Block block4 = session.CreateBlock(session.settings.GetInt("block4_numtrials", 7));
+
+        // Disparometer No Env Sequential Set Dist
+        Block block5 = session.CreateBlock(session.settings.GetInt("block5_numtrials", 5));
+        Block block6 = session.CreateBlock(session.settings.GetInt("block6_numtrials", 10));
+
 
         block1.settings.SetValue("scene_name", "Calibration 1");
-        block2.settings.SetValue("scene_name", "Disparometer");
+        block2.settings.SetValue("scene_name", "Calibration 1");
 
+        block3.settings.SetValue("scene_name", "Disparometer");
+        block4.settings.SetValue("scene_name", "Disparometer");
+
+        block5.settings.SetValue("scene_name", "Disparometer");
+        block6.settings.SetValue("scene_name", "Disparometer");
+
+
+        // For Calibration Tasks
+        getCalibrationPoints(block1);
+        getCalibrationPoints(block2);
+
+        getDisparometerDistances(block3, session.settings.GetBool("random_nonius", false));
+        getDisparometerDistances(block4, session.settings.GetBool("random_nonius", false));
+
+        getDisparometerDistances(block5, session.settings.GetBool("random_nonius", false));
+        getDisparometerDistances(block6, session.settings.GetBool("random_nonius", false));
+
+    }
+
+    public void getCalibrationPoints(Block block)
+    {
         int trialNum = 1;
-        int numTrials = session.settings.GetInt("block1_numtrials");    
-        for (int i = -numTrials/2; i < numTrials/2 + 1; i++)
+        for (int i = -2; i < 3; i++)
         {
-            //Debug.LogFormat("i value: {0}", i);
-            Trial currTrial = block1.GetRelativeTrial(trialNum);
-            currTrial.settings.SetValue("marker_x_pos", 0f + ((cm_shift / 100f) * i));
-            currTrial.settings.SetValue("calibration_distance", 1f);
-            trialNum += 1;
-            //Debug.LogFormat("Trial {0}, blockNum {2}, x_pos: {1}", currTrial.number, 
-                              //currTrial.settings.GetFloat("marker_x_pos"), currTrial.block.number);
-            if(i < 0)
+            for (int j = -2; j < 3; j++)
             {
-                currTrial.settings.SetValue("eye_tag", "Left Eye");
-            }
-            else
-            {
-                currTrial.settings.SetValue("eye_tag", "Right Eye");
+                //Debug.LogFormat("i value: {0}, j value: {1}", i, j);
+                Trial currTrial = block.GetRelativeTrial(trialNum);
+                currTrial.settings.SetValue("marker_x_pos", 0f + ((cm_shift / 100f) * i));
+                currTrial.settings.SetValue("marker_y_pos", 0f + ((cm_shift / 100f) * j));
+                currTrial.settings.SetValue("calibration_distance", 1f);
+                trialNum += 1;
+                //Debug.LogFormat("Trial {0}, blockNum {2}, x_pos: {1}, y_pos: {3}", currTrial.number, 
+                //  currTrial.settings.GetFloat("marker_x_pos"), currTrial.block.number, currTrial.settings.GetFloat("marker_y_pos"));
             }
         }
-
-        foreach (Trial trial in block2.trials)
+        //make left or right eye
+        foreach(Trial trial in block.trials)
         {
-            if (session.settings.GetBool("random_nonius", false))
+            if (trial.block.number == 1)
+            {
+                trial.settings.SetValue("eye_tag", "Left Eye");
+            }
+            else if (trial.block.number == 2)
+            {
+                trial.settings.SetValue("eye_tag", "Right Eye");
+            }
+        }
+        
+    }
+
+    public void getDisparometerDistances(Block block, bool random_nonius)
+    {
+        //int numTrials = block.settings.GetInt("block3_numtrials");
+        //int numTrials = 7;
+        int i = 0;
+        float shift = 0f;
+        float[] set_dist = new float[] { 35, 42, 63, 100, 200};
+        foreach (Trial trial in block.trials)
+        {
+            if (block.number == 3)
+            {
+                i++;
+                shift = i * (cm_shift / 100f);
+            }
+            else if (block.number == 4)
+            {
+                i = Random.Range(0, 7);
+                shift = i * (cm_shift / 100f);
+            }
+            else if (block.number == 5)
+            {
+                shift = (set_dist[trial.numberInBlock - 1] / 100) - 0.3f;
+            }
+            else if (block.number == 6)
+            {
+                i = Random.Range(0, 5);
+                shift = (set_dist[i] / 100) - 0.3f;
+            }
+            
+            trial.settings.SetValue("scene_distance", (0.3f + shift));
+            Debug.LogFormat("Trial {0}, Block {1}, scene_distance: {2}", trial.number,
+                block.number, trial.settings.GetFloat("scene_distance"));
+        }
+
+        
+        foreach (Trial trial in block.trials)
+        {
+            if (random_nonius)
             {
                 trial.settings.SetValue("nonius_start_pos", Random.Range(-1f, 1f));
             }
             else
             {
-                trial.settings.SetValue("nonius_start_pos", 0.5f);
-            }
-
-            if (session.settings.GetBool("random_distance", false))
-            {
-                trial.settings.SetValue("scene_distance", Random.Range(3, 10));
-            }
-            else
-            {
-                trial.settings.SetValue("scene_distance", (0.3f + (((int)trial.number - numTrials) * (cm_shift / 100f))));
-                //Debug.LogFormat("block {2},trial {1}, distance: {0}", trial.settings.GetFloat("scene_distance"), 
-                                                                                    //trial.number, trial.block.number);
+                trial.settings.SetValue("nonius_start_pos", 0.25f);
             }
         }
-
-        //deviceGO = GameObject.Find("XRRig");
-        //DataHolder.deviceHeight = deviceGO.transform.position.y;
-        DataHolder.deviceHeight = 1.36144f;
-        Debug.LogFormat("Device Height: {0}", DataHolder.deviceHeight);
     }
 
 
@@ -85,18 +148,18 @@ public class ExperimentHandler : MonoBehaviour
         // if this is the first trial in the block, we need to load a new scene.
         if (trial.numberInBlock == 1)
         {
-            Debug.Log("Setting up trial");
-            Debug.LogFormat("Trial Number: {0}, num in block: {1}, blocknum: {2}", 
-                                            trial.number, trial.numberInBlock, trial.block.number);
+            //Debug.LogFormat("Trial Number: {0}, num in block: {1}, blocknum: {2}", 
+            //                                trial.number, trial.numberInBlock, trial.block.number);
+            
             string scenePath = trial.settings.GetString("scene_name");
-
+            //Debug.LogFormat("Loading Scene: {0}", scenePath);
             // we'll load the scene asynchronously to avoid stutters
             AsyncOperation loadScene = SceneManager.LoadSceneAsync(scenePath);
 
             // here we specify what we WILL do when the scene is loaded
             loadScene.completed += (op) => { SceneSpecificSetup(trial); };
             //SceneManager.LoadScene(scenePath);
-            Debug.Log("loadScene completed");
+            //Debug.Log("loadScene completed");
             //SceneSpecificSetup(trial);
         }
         else
@@ -107,33 +170,31 @@ public class ExperimentHandler : MonoBehaviour
     }
     public void SceneSpecificSetup(Trial trial)
     {
-        Debug.Log("Scene Specific Setup");
-        Debug.Log(trial);
-        Debug.LogFormat("Trial Number: {0}, num in block: {1}, blocknum: {2}", trial.number, trial.numberInBlock, trial.block.number);
-        // in order to perform scene-specific setup, we will find and our scene-specific scripts 
-        // there are lots of ways to do this, but this works fine here
-        if (trial.block.number == 1)
+        //Debug.Log("Scene Specific Setup");
+        //Debug.Log(trial);
+        //Debug.LogFormat("Trial Number: {0}, num in block: {1}, blocknum: {2}", trial.number, trial.numberInBlock, trial.block.number);
+        if (trial.block.number == 1 || trial.block.number == 2)
         {
-            Debug.Log("start calib task");
+            //Debug.Log("start calib task");
             FindObjectOfType<CalibrationTask>().StartCalibrationTaskTrial(trial);
         }
-        else if (trial.block.number == 2)
+        else if (trial.block.number == 3 || trial.block.number == 4)
         {
-            Debug.Log("start disp task");
+            //Debug.Log("start calib task 2");
             FindObjectOfType<DisparometerTask>().StartDisparometerTaskTrial(trial);
         }
     }
 
     public void CleanupTrial(Trial trial)
     {
-        if (trial.block.number == 1)
+        if (trial.block.number == 1 || trial.block.number == 2)
         {
-            Debug.Log("Ending Calibration Task");
+            //Debug.Log("Ending Calibration Task");
             FindObjectOfType<CalibrationTask>().EndCalibrationTaskTrial(trial);
         }
-        else if (trial.block.number == 2)
+        else if (trial.block.number == 3 || trial.block.number == 4)
         {
-            Debug.Log("Ending Disparometer Task");
+            //Debug.Log("Ending Disparometer Task");
             FindObjectOfType<DisparometerTask>().EndDisparometerTaskTrial(trial);
         }
     }
@@ -144,12 +205,5 @@ public class ExperimentHandler : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
-    /*
-    public void Update()
-    {
-        if (Input.GetKey(KeyCode.T))
-        {
-            Session.instance.BeginNextTrial();
-        }
-    }*/
+
 }

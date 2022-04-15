@@ -1,9 +1,9 @@
 {
-	"block1_numtrials": 25,
+    "block1_numtrials": 25,
     "block2_numtrials": 25,
-	"calibration_distance": 1f,
-	"starting_disp_dist": 0.5f,
-	"if": {
+    "calibration_distance": 0,
+    "starting_disp_dist": 0,
+    "if": {
         "page": true
     },
     "then": [

@@ -34,7 +34,7 @@ public class GliaEyeTracking : MonoBehaviour
     public float[] getEyeTracking()
     {
         var eyeTracking = gliaBehaviour.GetLastEyeTracking();
-        Debug.Log(eyeTracking);
+        //Debug.Log(eyeTracking);
 
         
 
@@ -46,7 +46,7 @@ public class GliaEyeTracking : MonoBehaviour
 
         //Coordinate Format: [LX, LY, RX, RY]
         float[] pupilCoords = new float[] { lPupilX, lPupilY, rPupilX, rPupilY };
-        Debug.LogFormat("pupilCoords: {0}", pupilCoords);
+        //Debug.LogFormat("pupilCoords: {0}", pupilCoords);
         return pupilCoords;
 
         //Session.instance.CurrentTrial.result["right Pupil X"] = rPupilX;
