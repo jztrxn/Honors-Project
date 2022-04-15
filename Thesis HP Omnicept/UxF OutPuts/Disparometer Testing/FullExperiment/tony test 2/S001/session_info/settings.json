@@ -1,0 +1,37 @@
+{
+    "block1_numtrials": 25,
+    "block2_numtrials": 25,
+    "calibration_distance": 0,
+    "starting_disp_dist": 0,
+    "if": {
+        "page": true
+    },
+    "then": [
+        {
+            "name": "SiteTitle",
+            "bgcolor": "",
+            "color": "",
+            "position": "TL",
+            "text": "step1",
+            "time": 5000
+        },
+        {
+            "name": "Jawal",
+            "bgcolor": "",
+            "color": "",
+            "text": "step2",
+            "position": "BL",
+            "time": 5000
+        }
+    ],
+    "else": [
+        {
+            "name": "Password",
+            "bgcolor": "",
+            "color": "",
+            "text": "step3",
+            "position": "TL",
+            "time": 5000
+        }
+    ]
+}
