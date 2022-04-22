@@ -18,7 +18,7 @@ public class ExperimentHandler : MonoBehaviour
 
     public float cm_shift;
     public GameObject deviceGO;
-
+    public int numBlocks;
     public void Generate(Session session)
     {
         // Calibration 7 points horizontal
@@ -32,7 +32,7 @@ public class ExperimentHandler : MonoBehaviour
         getCalibrationPoints(calBlock2);
         
 
-        for (int i = 0; i < 14; i++)
+        for (int i = 0; i < numBlocks; i++)
         {
             session.CreateBlock(7);
         }

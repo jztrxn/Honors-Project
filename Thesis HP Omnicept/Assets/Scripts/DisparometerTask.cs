@@ -25,7 +25,7 @@ public class DisparometerTask : MonoBehaviour
     public void SetObjects(float distance, float noniusStart)
     {
         placeHolder.transform.localPosition = new Vector3(0, 0, distance);
-        noniusLine.transform.localPosition = new Vector3(noniusStart, -0.12f, -0.002f);
+        noniusLine.transform.localPosition = new Vector3(noniusStart, -0.035f, -0.0008000135f);
     }
 
     public void StartDisparometerTaskTrial(Trial trial)
