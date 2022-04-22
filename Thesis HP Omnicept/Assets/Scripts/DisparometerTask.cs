@@ -20,24 +20,12 @@ public class DisparometerTask : MonoBehaviour
     }
 
     public GameObject placeHolder;
-    public GameObject centerLine;
     public GameObject noniusLine;
-    public GameObject fusionLock;
-    public GameObject eyeMarker;
-    public GameObject plane;
-    //public float scaleFactor;
-
+    public GameObject environment;
     public void SetObjects(float distance, float noniusStart)
     {
         placeHolder.transform.localPosition = new Vector3(0, 0, distance);
-        //fusionLock.transform.localScale = new Vector3(scaleFactor * distance, scaleFactor * distance, 1f);
-        //plane.transform.localPosition = new Vector3(0f, 0f, 0f);
-        //centerLine.transform.localPosition = new Vector3(0f, 0.12f, 0f);
         noniusLine.transform.localPosition = new Vector3(noniusStart, -0.12f, -0.002f);
-        //fusionLock.transform.localPosition = new Vector3(0f, 0f, 0f);
-        //eyeMarker.transform.localPosition = new Vector3(0f,)
-        //Debug.LogFormat("fusionLock scale: {0}", fusionLock.transform.localScale);
-        //Debug.LogFormat("fusionLock position: {0}", fusionLock.transform.position);
     }
 
     public void StartDisparometerTaskTrial(Trial trial)
@@ -47,12 +35,20 @@ public class DisparometerTask : MonoBehaviour
         float distance = trial.settings.GetFloat("scene_distance");
         float noniusStartPos = trial.settings.GetFloat("nonius_start_pos");
         Debug.LogFormat("The distance for this trial is: {0}", distance);
-        Debug.LogFormat("Nonius Start Pos is: {0}", noniusStartPos);
+        //Debug.LogFormat("Nonius Start Pos is: {0}", noniusStartPos);
 
         Session.instance.CurrentTrial.result["Scene Distance"] = distance;
         Session.instance.CurrentTrial.result["Nonius Start"] = noniusStartPos;
 
         SetObjects(distance, noniusStartPos);
+        if (trial.block.settings.GetBool("environment"))
+        {
+            environment.SetActive(true);
+        }
+        else
+        {
+            environment.SetActive(false);
+        }
         StartCoroutine(waitForSpacePress());
     }
 
