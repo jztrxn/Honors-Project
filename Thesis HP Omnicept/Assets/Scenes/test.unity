@@ -840,7 +840,7 @@ MonoBehaviour:
   GliaBehavior: {fileID: 1542296894}
   cm_shift: 10
   deviceGO: {fileID: 1170681613}
-  numBlocks: 10
+  numBlocks: 12
 --- !u!4 &1091845280
 Transform:
   m_ObjectHideFlags: 0
