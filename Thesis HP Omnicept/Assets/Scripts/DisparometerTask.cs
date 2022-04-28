@@ -71,6 +71,12 @@ public class DisparometerTask : MonoBehaviour
         Session.instance.CurrentTrial.End();
     }
 
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Q)){
+
+        }
+    }
     void NextTrial()
     {
         if (Session.instance.CurrentTrial == Session.instance.LastTrial)

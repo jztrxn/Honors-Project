@@ -599,6 +599,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'Welcome to the Disparometer Strabismus Experiment. '
       objectReference: {fileID: 0}
+    - target: {fileID: 3482543129398382144, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 36
+      objectReference: {fileID: 0}
     - target: {fileID: 4267567203292169432, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -737,10 +741,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8563684494448067901, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
       propertyPath: m_Text
-      value: "There will be two tasks. First will be a calibration task, where we
-        simply take measurements of your eyes. Simply look at the sphere and press
-        space. \n\nThe second part of the experiment is the disparometer test. When
-        you believe the markers are aligned, press the space bar. "
+      value: "There will be two tasks. First will be a calibration task. During this
+        test, you will be shown a set of 25 points, represented by a red ball. When
+        you are looking directly at the white part on the ball, press the space to
+        move to the next set. \n\nThe second part of the experiment is a disparometer
+        test. You will be presented with a red and blue line, each presented to a
+        single eye. Occasionally, you will be presented with a stimulus rich scene.
+        Your task is to align the two lines together as best you can.\n\nMove the
+        blue line (bottom) by pressing the left or right shift buttons. When you
+        believe they are aligned, press the spacebar. \n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563684494448067901, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563684494448067901, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a3b6392f04558844bd340e68ced1ff9, type: 3}
@@ -823,7 +840,7 @@ MonoBehaviour:
   GliaBehavior: {fileID: 1542296894}
   cm_shift: 10
   deviceGO: {fileID: 1170681613}
-  numBlocks: 6
+  numBlocks: 10
 --- !u!4 &1091845280
 Transform:
   m_ObjectHideFlags: 0

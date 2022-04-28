@@ -14,14 +14,14 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftShift))
         {
             speed = speed - acceleration * Time.deltaTime;
             if(Mathf.Abs(speed) > maxSpeed){
                 speed = -maxSpeed;
             }
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightShift))
         {
             speed = speed + acceleration * Time.deltaTime;
             if (Mathf.Abs(speed) > maxSpeed)

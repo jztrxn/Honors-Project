@@ -37,73 +37,12 @@ public class ExperimentHandler : MonoBehaviour
             session.CreateBlock(7);
         }
         Debug.LogFormat(session.blocks.ToString());
-        /*
-        // Disparometer No Env Sequential 20cm apart
-        Block block3 = session.CreateBlock(7);
-        block3.settings.SetValue("environment", false);
-        getDisparometerDistances(block3, session.settings.GetBool("random_nonius", false), "seq_norm");
-        // Disparometer No Env Random 20cm apart
-        Block block4 = session.CreateBlock(7);
-        block4.settings.SetValue("environment", false);
-        getDisparometerDistances(block4, session.settings.GetBool("random_nonius", false), "seq_rand");
-
-        // Disparometer Yes Env Sequential 20cm apart
-        Block block5 = session.CreateBlock(7);
-        block5.settings.SetValue("environment", true);
-        getDisparometerDistances(block5, session.settings.GetBool("random_nonius", false), "seq_norm");
-        // Disparometer Yes Env Random 20cm apart
-        Block block6 = session.CreateBlock(7);
-        block6.settings.SetValue("environment", true);
-        getDisparometerDistances(block6, session.settings.GetBool("random_nonius", false), "seq_rand");
-
-        // No Env, seq
-        Block block7 = session.CreateBlock(7);
-        block7.settings.SetValue("environment", false);
-        getDisparometerDistances(block7, session.settings.GetBool("random_nonius", false), "seq_norm");
-        // No Env, rand
-        Block block8 = session.CreateBlock(7);
-        block8.settings.SetValue("environment", false);
-        getDisparometerDistances(block8, session.settings.GetBool("random_nonius", false), "seq_rand");
-
-        //yes env, seq
-        Block block9 = session.CreateBlock(7);
-        block9.settings.SetValue("environment", true);
-        getDisparometerDistances(block9, session.settings.GetBool("random_nonius", false), "seq_norm");
-        //yes env, rand
-        Block block10 = session.CreateBlock(7);
-        block10.settings.SetValue("environment", true);
-        getDisparometerDistances(block10, session.settings.GetBool("random_nonius", false), "seq_rand");
-
-        //no env, seq
-        Block block11 = session.CreateBlock(7);
-        block11.settings.SetValue("environment", false);
-        getDisparometerDistances(block11, session.settings.GetBool("random_nonius", false), "seq_norm");
-        //no env, rand
-        Block block12 = session.CreateBlock(7);
-        block12.settings.SetValue("environment", false);
-        getDisparometerDistances(block12, session.settings.GetBool("random_nonius", false), "seq_rand");
-
-        //yes env, seq
-        Block block13 = session.CreateBlock(7);
-        block13.settings.SetValue("environment", true);
-        getDisparometerDistances(block13, session.settings.GetBool("random_nonius", false), "seq_norm");
-        //yes env, rand
-        Block block14 = session.CreateBlock(7);
-        block14.settings.SetValue("environment", true);
-        getDisparometerDistances(block14, session.settings.GetBool("random_nonius", false), "seq_rand");
-        */
+        
 
         int envCounter = 1;
         int dist_type = 1;
         foreach (Block block in session.blocks)
         {
-            /*
-            //check if calibration block
-            if (block.settings.GetBool("calibration_block", false)){
-                Debug.Log("block skipped");
-                break;
-            }*/
-
             // set scene name
             block.settings.SetValue("scene_name", "Disparometer");
 
@@ -111,28 +50,44 @@ public class ExperimentHandler : MonoBehaviour
             if (envCounter == 1 || envCounter == 2)
             {
                 block.settings.SetValue("environment", false);
+                //Session.instance.CurrentTrial.result["Environment"] = block.settings.GetBool("environment").ToString();
                 Debug.LogFormat("block number: {0}, env {1}", block.number, block.settings.GetBool("environment"));
             }
             else
             {
                 block.settings.SetValue("environment", true);
+                //Session.instance.CurrentTrial.result["Environment"] = block.settings.GetBool("environment").ToString();
                 Debug.LogFormat("block number: {0}, env {1}", block.number, block.settings.GetBool("environment"));
             }
             envCounter++;
             if (envCounter > 4) { envCounter = 1; }
 
             // set distances
-            if ((dist_type % 2) == 1)
+            string dist_str;
+            if (dist_type == 1)
             {
-                string dist_str = "seq_norm";
-                getDisparometerDistances(block, session.settings.GetBool("random_nonius", false), dist_str);
+                dist_str = "seq_norm";
+                //Session.instance.CurrentTrial.result["seq_type"] = dist_str;
+                
+            }
+            else if (dist_type == 2)
+            {
+                dist_str = "seq_rand";
+                //Session.instance.CurrentTrial.result["seq_type"] = dist_str;
+            }
+            else if (dist_type == 3)
+            {
+                dist_str = "preset_norm";
+                //Session.instance.CurrentTrial.result["seq_type"] = dist_str;
             }
             else
             {
-                string dist_str = "seq_rand";
-                getDisparometerDistances(block, session.settings.GetBool("random_nonius", false), dist_str);
+                dist_str = "preset_rand";
+                //Session.instance.CurrentTrial.result["seq_type"] = dist_str;
             }
+            getDisparometerDistances(block, session.settings.GetBool("random_nonius", true), dist_str);
             dist_type++;
+            if (dist_type > 4) { dist_type = 1; }
         }
 
         calBlock1.settings.SetValue("scene_name", "Calibration 1");
@@ -171,15 +126,6 @@ public class ExperimentHandler : MonoBehaviour
         }
         
     }
-    
-    /*public void generateBlocks(Session session, int num_blocks)
-    {
-        for(int i = 1; i <= num_blocks; i++)
-        {
-            string block_name = "block" + i.ToString();
-            Block block_name = session.CreateBlock(session.settings.GetInt("block3_numtrials", 7));
-        }
-    }*/
 
     public void getDisparometerDistances(Block block, bool random_nonius, string dist_type)
     {
@@ -187,7 +133,7 @@ public class ExperimentHandler : MonoBehaviour
         //int numTrials = 7;
         int i = 0;
         float shift = 0f;
-        float[] set_dist = new float[] { 35, 42, 63, 100, 200};
+        float[] set_dist = new float[] { 30, 35, 42, 63, 80, 100, 200};
         foreach (Trial trial in block.trials)
         {
             if (dist_type == "seq_norm")
@@ -200,15 +146,15 @@ public class ExperimentHandler : MonoBehaviour
                 i = Random.Range(0, 7);
                 shift = i * (cm_shift / 100f);
             }
-            /*else if (block.number == 5)
+            else if (dist_type == "preset_norm")
             {
                 shift = (set_dist[trial.numberInBlock - 1] / 100) - 0.3f;
             }
-            else if (block.number == 6)
+            else if (dist_type == "preset_rand")
             {
                 i = Random.Range(0, 5);
                 shift = (set_dist[i] / 100) - 0.3f;
-            }*/
+            }
             
             trial.settings.SetValue("scene_distance", (0.3f + shift));
             Debug.LogFormat("Trial {0}, Block {1}, scene_distance: {2}", trial.number,
@@ -220,11 +166,11 @@ public class ExperimentHandler : MonoBehaviour
         {
             if (random_nonius)
             {
-                trial.settings.SetValue("nonius_start_pos", Random.Range(-1f, 1f));
+                trial.settings.SetValue("nonius_start_pos", Random.Range(-0.1f, 0.1f));
             }
             else
             {
-                trial.settings.SetValue("nonius_start_pos", 0.25f);
+                trial.settings.SetValue("nonius_start_pos", 0.1f);
             }
         }
     }

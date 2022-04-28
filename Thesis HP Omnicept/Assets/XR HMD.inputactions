@@ -11,7 +11,8 @@
                     "id": "86d2a5de-9027-4acf-9995-d81985be77bc",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -38,7 +39,8 @@
                     "id": "23b10fa6-c065-443d-88b2-3bad8c1ef8ec",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Select",
@@ -46,7 +48,8 @@
                     "id": "11543812-798e-40e2-9893-56b21720c6b0",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Activate",
@@ -54,7 +57,8 @@
                     "id": "88c4d0e3-1bc1-44bd-a587-d1af0dff36dd",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -103,7 +107,8 @@
                     "id": "d192f0e6-bd28-4017-b44e-d60b30a72736",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Activate",
@@ -111,7 +116,8 @@
                     "id": "195b4446-798b-4b6c-9c68-81010ead11d6",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
